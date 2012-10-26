@@ -1,0 +1,199 @@
+%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[oneside,dutch]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Compton}
+
+
+\author{N.G. Schultheiss}
+
+\maketitle
+
+\section{Inleiding}
+
+Deze module volgt op de modules ``Botsingen'' en ``Relativiteit''.
+Compton leidde uit deze kennis een model af waarmee botsingen van
+fotonen op electronen te berekenen zijn. Omdat fotonen met de lichtsnelheid
+bewegen en de snelheid van electronen na de botsing aardig op kan
+lopen moeten we deze botsing relativistisch behandelen. \newpage{}
+
+
+\section{Compton}
+
+Arthur Holly Compton onderzocht de verstrooiing van Röntgenstraling
+en ontdekte dat deze verstrooiing te maken had met de botsing van
+fotonen op electronen. Hierna wijdde hij zich aan de verdeling van
+cosmische straling die op aarde gemeten wordt. 
+
+Bij Comptonverstrooiing wordt een klein deel van de energie en de
+impuls wordt overgedragen van het foton naar het electron. Uiteraard
+gelden er voor deze botsing weer de wet van behoud van energie en
+de wet van behoud van impuls. Als het foton op een vrij electron botst,
+is er geen energie nodig om de binding met een ion op te heffen. De
+botsing is dan als elastisch te beschouwen. 
+
+Als we uitgaan van een stilstaand electron geldt:
+
+\begin{equation} \label{eq:rest}
+\begin{array}{c}
+E_{electron}=m_{electron}c^{2}\\
+p_{electron}=0
+\end{array}
+\end{equation}
+
+
+Verder geldt voor het foton:
+
+\begin{equation} \label{eq:foton}
+\begin{array}{c}
+E_{f}=p_{f}c=h\nu_{f}
+\end{array}
+\end{equation}
+
+
+Na de botsing krijgt het electron impuls en energie, bijgevolg nemen
+de impuls en de energie van het foton af. Dit is als volgt voor te
+stellen:
+
+\begin{figure}[H]
+\includegraphics[scale=0.75]{compton_scattering.pdf}
+
+\caption{Compton verstrooiing}
+\end{figure}
+
+
+De wet van behoud van impuls is in dit geval te schrijven als:
+
+\begin{equation}
+\mathbf{p}_{f}=\mathbf{p}_{f'}+\mathbf{p}_{e'}
+\end{equation}
+
+
+Door de vectoren te verschuiven, kunnen we een driehoek maken waarvoor
+de cosinusregel geldt:
+
+\begin{equation} \label{eq:cosinus}
+p_{e'}^{2}=p_{f}^{2}+p_{f'}^{2}-2p_{f}p_{f'}cos\left(\theta\right)
+\end{equation}
+
+
+Verder geldt de wet van behoudt van energie:
+
+\begin{equation}
+E_{f}+E_{e}=E_{f'}+E_{e'}\Longleftrightarrow
+\end{equation}
+
+
+Met \ref{eq:rest} en \ref{eq:foton}:
+
+\begin{equation}
+h\nu_{f}+m_{e}c^{2}=h\nu_{f'}+\sqrt{p_{e'}^{2}c^{2}+m_{e}^{2}c^{4}}\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+h\nu_{f}-h\nu_{f'}+m_{e}c^{2}=\sqrt{p_{e'}^{2}c^{2}+m_{e}^{2}c^{4}}\Longleftrightarrow
+\end{equation}
+
+
+Kwadrateren geeft:
+
+\begin{equation}
+\left(h\nu_{f}-h\nu_{f'}+m_{e}c^{2}\right)^{2}=p_{e'}^{2}c^{2}+m_{e}^{2}c^{4}\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+\left(h\nu_{f}-h\nu_{f'}\right)^{2}+2m_{e}c^{2}\left(h\nu_{f}-h\nu_{f'}\right)+m_{e}^{2}c^{4}=p_{e'}^{2}c^{2}+m_{e}^{2}c^{4}\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+h^{2}\nu_{f}^{2}-2h^{2}\nu_{f}\nu_{f'}+h^{2}\nu_{f'}^{2}+2m_{e}c^{2}\left(h\nu_{f}-h\nu_{f'}\right)=p_{e'}^{2}c^{2}\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation} \label{eq:afleiding}
+\frac{h^{2}\nu_{f}^{2}}{c^{2}}-\frac{2h^{2}\nu_{f}\nu_{f'}}{c^{2}}+\frac{h^{2}\nu_{f'}^{2}}{c^{2}}+2m_{e}c\left(\frac{h\nu_{f}}{c}-\frac{h\nu_{f'}}{c}\right)=p_{e'}^{2}
+\end{equation}
+
+
+We kunnen nu formule \ref{eq:cosinus} aan formule \ref{eq:afleiding} koppelen:
+
+\begin{equation}
+\frac{h^{2}\nu_{f}^{2}}{c^{2}}-\frac{2h^{2}\nu_{f}\nu_{f'}}{c^{2}}+\frac{h^{2}\nu_{f'}^{2}}{c^{2}}+2m_{e}c\left(\frac{h\nu_{f}}{c}-\frac{h\nu_{f'}}{c}\right)=p_{f}^{2}+p_{f'}^{2}-2p_{f}p_{f'}cos\left(\theta\right)\Longrightarrow
+\end{equation}
+
+
+\begin{equation}
+-\frac{2h^{2}\nu_{f}\nu_{f'}}{c^{2}}+2m_{e}c\left(\frac{h\nu_{f}}{c}-\frac{h\nu_{f'}}{c}\right)=-\frac{2h^{2}\nu_{f}\nu_{f'}}{c^{2}}cos\left(\theta\right)\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+2m_{e}c\left(\frac{h\nu_{f}}{c}-\frac{h\nu_{f'}}{c}\right)=\frac{2h^{2}\nu_{f}\nu_{f'}}{c^{2}}\left(1-cos\left(\theta\right)\right)\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+\frac{m_{e}c}{h}\left(\frac{\nu_{f}}{c}-\frac{\nu_{f'}}{c}\right)=\frac{\nu_{f}\nu_{f'}}{c^{2}}\left(1-cos\left(\theta\right)\right)\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+\frac{m_{e}c}{h}\left(\frac{c}{\nu_{f'}}-\frac{c}{\nu_{f}}\right)=\left(1-cos\left(\theta\right)\right)\Longleftrightarrow
+\end{equation}
+
+
+\begin{equation}
+\left(\frac{c}{\nu_{f'}}-\frac{c}{\nu_{f}}\right)=\frac{h}{m_{e}c}\left(1-cos\left(\theta\right)\right)\Longrightarrow
+\end{equation}
+
+
+\begin{equation}
+\Delta\lambda=\frac{h}{m_{e}c}\left(1-cos\left(\theta\right)\right)
+\end{equation}
+
+
+Deze formule geeft de verstrooiing van fotonen aan electronen. De
+constante $\frac{h}{m_{e}c}$ staat ook bekend als de Compton golflengte
+van een electron.
+
+Het is natuurlijk zo dat de fotonen verstrooid worden door botsing
+met de electronen. De electronen verplaatsen dus ook. Hierdoor kunnen
+verschillende verschijnselen ontstaan. In een verzadigde damp kan
+dit bijvoorbeeld leidden tot condensatie. Dit werd voor het eerst
+waargenomen door Charles Thomas Rees Wilson toen hij een experiment
+voor de vorming van wolken in een laboratorium uitvoerde. In feite
+werden de condenssporen in dit geval niet door fotonen gevormd, maar
+op vergelijkbare wijze door cosmische deeltjes. Een dergelijke opstelling
+wordt nog steeds gebruikt en wordt een nevelkamer genoemd. Uiteraard
+kunnen we ook naar de verdamping van een vloeistof kijken, een dergelijke
+ruimte staat bekend als een bellenkamer. 
+\end{document}
