@@ -1,0 +1,27 @@
+table {
+    width: 775px;
+    margin: 20px auto 0px auto;}
+
+td {
+    vertical-align:middle;
+    text-align:center;}
+
+table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9393AF;}
+
+td a {display: block;}
+
+.vervolg0 {background-color: #ddddff;}
+.vervolg1 {background-color: #ccccee;}
+.vervolg2 {background-color: #bbbbdd;}
+.vervolg3 {background-color: #aaaacc;}
+.vervolg4 {background-color: #a0a0c0;}
+
+.nietGekozen {background-color: #9999bb;}
+
+a:link {text-decoration: none; color: black}
+a:visited {text-decoration: none; color: black}
+a:active {text-decoration: none; color: black}
+a:hover {text-decoration: none; color: blue}
