@@ -18,6 +18,8 @@ td a {display: block;}
 .vervolg2 {background-color: #bbbbdd;}
 .vervolg3 {background-color: #aaaacc;}
 .vervolg4 {background-color: #a0a0c0;}
+td.empty {
+    border-width:0px;}
 
 .nietGekozen {background-color: #9999bb;}
 
