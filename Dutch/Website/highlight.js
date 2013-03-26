@@ -46,12 +46,12 @@ function maakLijst(id) {
                                                 if((colD.substr(l, 1) == ',') || (l == colD.length)) {
                                                     klasD.push(attr);
                                                     attr = '';}
-                                                else attr = attr + colD.substr(l, 1);}}
+                                                else attr += colD.substr(l, 1);}}
                                         attr = '';}
-                                    else attr = attr + colC.substr(k, 1);}}
+                                    else attr += colC.substr(k, 1);}}
                             attr = '';}
-                        else attr = attr + colB.substr(j, 1);}}}
-            else attr = attr + colA.substr(i, 1);}}
+                        else attr += colB.substr(j, 1);}}}
+            else attr += colA.substr(i, 1);}}
 }
 
 
