@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+
+%equations
+\usepackage[fleqn]{amsmath}
+\numberwithin{equation}{section}
+
+%figures
+\usepackage[dvips]{graphicx}
+\graphicspath{{./images/}}
+\numberwithin{figure}{section}
+
+%excercises
+\newcounter{Exercise}
+\setcounter{Exercise}{1}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.9}
+\usepackage{caption}
+
+%tables
+\numberwithin{table}{section}
+
+%specials
+\usepackage{textcomp} %special (greek) characters as text
+%\usepackage{pstricks} %
+%\usepackage{ifthen} %
+%\usepackage{calc} %
+%\usepackage{isotope}
+\usepackage{hyperref}
+\usepackage[bottom]{footmisc} %footnote below figure
+\usepackage{footnpag}%number footnotes per page
+
+
+%document details
+\author{Koos Kortland \\ translated and adapted by K. Schadenberg}
+\date{}
+\title{HiSPARC Detector - Installation}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+After your school has built and tested its own detector, it has to be placed at a suitable location. In this text we will take a look at all the tasks that need to be performed and you will write our own installation plan.
+
+\section{Installation}
+A single HiSPARC detector station consists of two detectors inside ski-boxes and a GPS antennae placed close to each other on a roof connected to a computer and some electronics. A more detailed description can be found in the module `HiSPARC Detector - Detector Station'.\\
+
+To install/place the detector station on the roof of you school you need to:
+\begin{itemize}
+\item Find a suitable location on the roof.
+\item Anchor the two ski-boxes to the roof using concrete slabs.
+\item Place the detectors inside the ski-boxes.
+\item Placing the GPS antenna.
+\item Running the cables from the electronics box to the detectors and GPS antenna.
+\item Installing the computer and electronics box.
+\item Checking the operation of the detection station.
+\end{itemize}
+
+Some tasks are pretty straight forward while others need a little more preparation. Two manuals are available via the HiSPARC website to help plan and perform the installation of the detector:
+\begin{enumerate}[-]
+\item HiSPARC Detector Construction Manual
+\item HiSPARC II Detector Installation Manual
+\end{enumerate}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : Create your own work plan for the placement and installation of the detector station. This work plan describes who needs to do what and at what time. Do not forget to think about how the test the operation of the station. Read the two manuals for more information.\end{shaded}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : Keep a log during the installation of the station. Use this log to write a report. This log should also include a drawing of the final placement of the detectors and the GPS antenna, what is the orientation and distance between them?
+
+\textbf{Do not forget to take pictures!}\end{shaded}
+
+Your task is not complete when the detector is up and running up on the roof. It needs to keep running without problems! Although we have tried to make the system as robust as possible, there is always something that can spoil or even completely stop the acquisition of data; crashing computers, electrical cuts, failing internet connections, damages to a detector \ldots 
+
+Therefore, create a scheme to periodically check whether or not the detector is functioning properly.
+
+\end{document}
+

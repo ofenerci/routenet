@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+
+%equations
+\usepackage[fleqn]{amsmath}
+\numberwithin{equation}{section}
+
+%figures
+\usepackage[dvips]{graphicx}
+\graphicspath{{./images/}}
+\numberwithin{figure}{section}
+
+%excercises
+\newcounter{Exercise}
+\setcounter{Exercise}{1}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.9}
+\usepackage{caption}
+
+%tables
+\numberwithin{table}{section}
+
+%specials
+\usepackage{textcomp} %special (greek) characters as text
+%\usepackage{pstricks} %
+%\usepackage{ifthen} %
+%\usepackage{calc} %
+%\usepackage{isotope}
+\usepackage{hyperref}
+\usepackage[bottom]{footmisc} %footnote below figure
+\usepackage{footnpag}%number footnotes per page
+\usepackage{nicefrac}%fractions with slash
+
+
+%document details
+\author{N.G. Schultheiss \\ translated and adapted by K. Schadenberg}
+\date{}
+\title{Cherenkov}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This module follows the module `Compton'.
+
+\section{Cherenkov}
+Pavel Alekseyevich Cherenkov (1904-1990) was a Soviet physicist who shared the Nobel Prize in Physics in 1958 with Ilya Frank and Igor Tamm for the discovery of Cherenkov radiation made in 1934.
+
+Cherenkov was researching the radiation emitted by nuclear reactors containing water which is used both as a cooling agent as well as a neutron moderator.\footnote{A moderator is a medium that reduces the speed of fast neutrons inside nuclear reactors. This deceleration is necessary to maintain the nuclear reaction. Without the moderator the fast neutrons will escape the reactor vessel without interacting with other nuclei. This will cause the reactor to shut down. Too many slow neutrons is also a problem. A rapid increase in the number of nuclear reactions causes overheating. If this is not stopped soon enough the reactor could be damaged by a melt-down (Harrisburg and Chernobyl).}
+
+As we have seen with the Geigercounter, moving particles can knock away electrons from a medium. The electron can jump to a higher energy state within the atom or be made completely free from the atom (also a form of higher energy state). With Cherenkov radiation the electron immediately returns to its ground state, emitting its excess energy in the form of a photon. If this happens in water then photons won't have the the speed of light in vacuum, but it will move slower:
+\begin{equation*}
+c_{medium} = \frac{c}{N_{medium}}
+\end{equation*}
+The particle that knocked the electron into a higher energy state could have had a higher velocity than $c_{medium}$.
+
+Let us assume the particle was travelling faster than the speed of light in the medium. Just like a plane flying at supersonic speed, the particle will emit a cone of light (the plane `emits' a cone of sound). Because the particle scatters every time it hits an electron, this cone of light won't be very well defined. The emission of (visible) light is called Cherenkov radiation. Because lighter particles are scattered more easily, one can estimate the mass of the particle by looking at the `sharpness' of the light cone.
+
+\begin{figure}\begin{center}
+\includegraphics[scale=1]{light_cone_s.eps}%
+\caption{Schematic representation of the emission of Cherenkov radiation.}\label{fig:light_cone}
+\end{center}\end{figure}
+
+\end{document}

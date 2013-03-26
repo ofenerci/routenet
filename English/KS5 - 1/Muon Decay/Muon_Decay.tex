@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+
+%equations
+\usepackage[fleqn]{amsmath}
+\numberwithin{equation}{section}
+
+%figures
+\usepackage[dvips]{graphicx}
+\graphicspath{{./images/}}
+\numberwithin{figure}{section}
+
+%excercises
+\newcounter{Exercise}
+\setcounter{Exercise}{1}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.9}
+\usepackage{caption}
+
+%tables
+\numberwithin{table}{section}
+
+%specials
+\usepackage{textcomp} %special (greek) characters as text
+%\usepackage{pstricks} %
+%\usepackage{ifthen} %
+%\usepackage{calc} %
+%\usepackage{isotope}
+\usepackage{hyperref}
+\usepackage[bottom]{footmisc} %footnote below figure
+\usepackage{footnpag}%number footnotes per page
+\usepackage{nicefrac}%fractions with slash
+
+
+%document details
+\author{Koos Kortland \\ translated and adapted by K. Schadenberg}
+\date{}
+\title{Muon Decay}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+High up in the atmosphere cosmic rays interact with the atoms and molecules present in the air. These cosmic rays have enough energy to create new particles. One type of particles which is created in large numbers is the muon. In this module we will take a closer look at this particle.
+
+\section{Creating Muons}
+Muons are one of the elementary particles as described by the standard model.\footnote{The standard model is described in more detail is the modules `Standard Model - Particles' and `Standard Model - Forces'.} The muon is the heavy brother of the electron. It has the same charge but has a mass 207 times as large. Muons are not stable, after a short time they decay into an electron and two neutrinos.\footnote{If a muon is a heavy brother of the electron, then neutrinos are the weird cousins without mass and charge.} The average lifetime of a muon is $2.2 \cdot 10^{-6}$~s. Muons created by cosmic rays have an average energy of 1~GeV ($10^9$eV).
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : A muon with mass $207 \cdot m_e$, 207 times the mass of an electron, is created by a cosmic ray at an altitude of 10~km. The created muon has an energy of 1056~MeV, roughly 1~GeV. \\
+\begin{enumerate}[-]
+\item Calculate the speed of this muon, assuming all the energy is kinetic energy.
+\item  Can a particle which has mass attain such a high speed? Explain why, or why not.
+\end{enumerate}\end{shaded}
+
+If you have done your sums right you obtained a speed larger than the speed of light, $c = 3.0 \cdot 10^8$~m/s,  in the exercise above. According to Albert Einstein this is not possible. The calculation above shows that the speed of the muon is very large, large enough that it is no longer negligible compared to the speed of light. This means we have to take relativity into account. According to Einstein's theory of special relativity a part of the energy of the muon is converted into mass. The new, relativistic mass $m$ of the muon becomes:
+\begin{equation}
+m = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{equation}
+with $m_0$ the rest mass (also called the invariant or intrinsic mass) of the muon, $v$ the speed of the muon, and $c$ the speed of light (in vacuum). For more details about relativity and the derivation of this equation see the module `Relativity'.
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : The rest mass if a muon is 105.6~$\frac{\mbox{MeV}}{c^2}$. Show using a calculation that this is the same as 207 times the rest mass of an electron ($9.1 \cdot 10^{-31}$~kg).\end{shaded}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : According to Einstein's special theory of relativity mass and energy are equivalent. The statement is summarised in his famous equation:
+\begin{equation}
+E= m \cdot c^2
+\end{equation}
+\begin{enumerate}[-]
+\item Determine the rest energy $E_0$ of a muon. Use this to show that the following is true for the muon of exercise 1: $\frac{E_0}{E}=0.1$
+\item Show using a derivation that the speed $v$ of a muon is given by:
+\begin{equation}
+v = c \cdot \sqrt{1- \frac{E^2_0}{E^2}}
+\end{equation}
+\item Calculate the speed of the muon in exercise 1.
+\item Calculate the distance the muon can travel during its lifetime with this speed.
+\end{enumerate}\end{shaded}
+
+\section{Time Dilation}
+The last exercise of the previous section showed that muons created high up in the atmosphere are unable to travel the entire distance to the surface of the Earth. And yet we continuously measure these particles at sea level. Something must be wrong here. Or there is something special happening.
+
+When travelling very fast, with speeds near the speed of light, not only does mass change, but also time. The speed of the muon of exercise 1 is 0.995 times $c$, almost the same as the speed of light. This causes time dilation, time is stretched out. If the muon were wearing a watch it would be running slow. The relativistic lifetime of the muon can be determined using:
+\begin{equation}
+t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
+with $t_0$ the `normal' lifetime of a muon, $v$ the speed of the muon, and $c$ is again the speed of light. More details about this equation and the derivation can be fount in the module `Relativity'.
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : We know the speed $v$ of our muon and its normal lifetime $t_0$. This enables us to calculate its relativistic lifetime.
+\begin{enumerate}[-]
+\item Calculate the relativistic lifetime of the muon. Verify that a muon with an energy ten times the rest energy has a relativistic lifetime also ten times the normal lifetime.
+\item Calculate the distance the muon can travel using the relativistic lifetime.
+\end{enumerate}\end{shaded}
+
+Apparently, when we account for relativistic effects, muons are capable of almost reaching the Earth's surface. For the calculations above we picked the `easy' energy of ten times the rest energy. A slightly larger energy and the muon does reach the surface. Depending on the energy of the initial cosmic ray, muon with energies up to 100~TeV ($10^{14}$~eV) can be created in cosmic air showers.
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : A muon with an energy larger than 1~GeV will be able to travel further.
+\begin{enumerate}[-]
+\item Argue, or show using a calculation, that the speed of a muon with an energy twice as large, i.e. $E \approx 2$~GeV, is almost identical to the speed of a 1~GeV muon.
+\item Argue, or show using a calculation, that this 2~GeV muon does reach the surface of the Earth.
+\end{enumerate}\end{shaded}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : Can you think of a different explanation why a muon with an average lifetime of 2.2~microseconds can reach the surface of the Earth?\end{shaded}
+
+\section{Rate of Decay}
+The decay of muons can be compared to the decay of a radioactive material. Lifetime and half life are two different ways of describing the same process. During one half life, half of the radioactive material decays. Or equivalent the intensity of the radiation decreases with 50\%. What happens when we have only one radioactive atom? After one half life we cannot say that have one half of an atom left. There either will be one or zero radioactive atoms. There is a 50\% change the atom decays during the half life.
+
+The lifetime is not exactly the same as the half life but can be converted into the half life. One uses Euler's number as a base for the exponent while the other uses 2. After one life time roughly 73\% of the muons will be transformed into electrons and neutrinos. This means that even muons with an energy of 1~GeV or even less can reach the surface of the Earth.
+
+\end{document}
+

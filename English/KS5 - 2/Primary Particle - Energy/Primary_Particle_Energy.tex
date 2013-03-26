@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+
+%equations
+\usepackage[fleqn]{amsmath}
+\numberwithin{equation}{section}
+
+%figures
+\usepackage[dvips]{graphicx}
+\graphicspath{{./images/}}
+\numberwithin{figure}{section}
+
+%excercises
+\newcounter{Exercise}
+\setcounter{Exercise}{1}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.9}
+\usepackage{caption}
+
+%tables
+\numberwithin{table}{section}
+
+%specials
+\usepackage{textcomp} %special (greek) characters as text
+%\usepackage{pstricks} %
+%\usepackage{ifthen} %
+%\usepackage{calc} %
+%\usepackage{isotope}
+\usepackage{hyperref}
+\usepackage[bottom]{footmisc} %footnote below figure
+\usepackage{footnpag}%number footnotes per page
+
+
+%document details
+\author{Koos Kortland \\ translated and adapted by K. Schadenberg}
+\date{}
+\title{Primary Particle - Energy}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The energy of a primary cosmic ray cannot be measured directly using the HiSPARC or any other existing array.\footnote{Why is this? Where would one need to place a detector to measure the primary particles and how many of these particles hit the atmosphere every day?} We have to estimate this energy using the energy and distribution of all the components of the shower created by the primary ray. To make an accurate estimate we need to know the number of (secondary) particles and the distance they travelled. Unfortunately the HiSPARC array is also unable to measure these parameters. We therefore use the measured particle density (the number of particles per metre squared) of a number of detector stations to estimate the energy of the primary particle.
+
+\section{Calculating the Primary Energy}
+The spread of the particle density in the horizontal plane is used in a semi-empirical formula to estimate the primary energy. This semi-empirical formula is not based solely on theory, it also combines observations and a few general assumptions. The formula that is used to estimate the energy is called the Nishimura-Kamata-Greisen function (NKG-function):
+\begin{flalign}
+S\left( r\right) = k \cdot \left( \frac{r}{r_0} \right)^{-\alpha} \cdot \left( 1+ \frac{r}{r_0} \right)^{-\left( \eta - \alpha \right) }
+\label{eq:S_r} 
+\end{flalign}
+In the NKG-function $S(r)$ denotes the particle density at a certain distance $r$ from the shower core, $k$, $r_0$, $\alpha$, and $\eta$ are constants. The constant $k$ is a factor which is proportional with to primary cosmic ray energy. The constant $r_0$ is the Moli\`ere radius which describes the amount of scattering of particles inside the atmosphere. The constants $\alpha$ and $\eta$ must be determined using measurements, $\eta$ also contains the influence of the shower angle with the zenith ($\theta$).
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : The NKG-function gives the particle density $S$ as a function of the distance $r$ to the shower core. The density is dependent on the primary energy which manifests itself in the function as (a part of) the constant $k$. Sketch in a S,r-diagram the course of the particle density with respect to the distance to the shower core for two primary particles with different energies. Explain the shape and location of both lines in the graph.\end{shaded}
+
+How can we use the NKG-function to estimate the energy $E_0$ of the primary cosmic particle? We assume that we know the zenith-angle $\theta$ of the shower\footnote{The angle of the shower can be calculated using the arrival times of the secondary particles in the different detector stations. See `Primary Particle - Angle' for more information.} and that the constants $\alpha$, $\eta$, and $r_0$ are known from earlier research.
+
+The measurements of the HiSPARC array gives us information about the particle density $S$ at the different detector sites. But because the location of the shower core is unknown at this moment we do not know the value of $r$ which belongs to these values. We do know the positions of our detectors, therefore if we guess the location of the shower core can calculate $r$. We can also guess the value of the constant $k$. Using our guesses we can calculate the value of $S$ at the detector stations.
+
+More often than not these calculated values will not match the measured particle densities. But we can keep on guessing until we find the value of $k$ and the location of the shower core for which the difference between the measured and calculated particles densities is smallest. The location of the shower core and value of $k$ obtained in this fashion is our \textit{best estimate}.
+
+The next step is using our best estimate to calculate $S(600)$, the particle density at a distance of 600 metres from the shower core. With the use of a second semi-empirical formula we can estimate the energy $E_0$ (in eV) of the primary cosmic particle:
+\begin{flalign}
+E_0 = c \cdot S\left( 600 \right)^{\epsilon}
+\label{eq:E_0} 
+\end{flalign}
+In this formula $c$ and $\epsilon$ are constants known from earlier research. The choice of $S(600)$ was relatively arbitrary. Researchers of cosmic radiation used this value in the past and continue to use it.
+
+To give an impression of the values for the different constants used in the semi-empirical formulas we take a look at the values used by the AGASA scintillation array in Japan. Scientist use the following values for the constants of equation~\ref{eq:S_r} when analysing data from the AGASA network: $\alpha=1.2$, $\eta=3.97 - 1.79 \left( \frac{1}{\cos \theta} - 1\right)$, and $r_0=92$~m. $\theta$ is the zenith angle of the primary cosmic ray.
+
+The energy $E_0$ (in eV) of the primary particle is calculated using the following values in equation~\ref{eq:E_0}: $c=2.15 \cdot 10^{17}$ and $\epsilon=1.015$. The particle density $S(600)$ -- the density at a distance of 600~m of the shower core -- in this equation needs to be determined using the best estimate of the shower core and value for $k$ in equation~\ref{eq:S_r}.
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : In table~\ref{tab:data} the results of a measurement of a shower are shown. Three different detectors were hit by secondary particles. We will use this data, together with the AGASA values for the constants mentioned above, to estimate the energy of the primary cosmic ray. We will assume that the shower lies within the triangle ABC. Almost all the numbers needed for equation~\ref{eq:S_r} are known, we only need the zenith angle $\theta$ to calculate $\eta$. In `Primary particle - Angle' the same values as in table~\ref{tab:data} are used in an example to calculate the zenith angle. You can do this calculation for yourself or use the following angle: $\theta = 15^{\circ}$.
+
+Using equation~\ref{eq:S_r} and the particle density values of table~\ref{tab:data} we can start looking for (or guessing) the location of the shower core and the accompanying value for $k$ which best describe our measurements: our best estimate. The value for $k$ found using this method will give us the primary particle energy using equation~\ref{eq:E_0}.\\
+
+\begin{tabular}[h] {l r r r r}
+Detector station & x~(m) & y~(m) & t~(\textmu s) & particle density $S$~(m$^{-2}$) \\ \hline
+A & 0 & 0 & 0.00 & 10 \\
+B & -400 & 50 & 0.29 & 7 \\
+C & -300 & -500 & 0.42 & 12 \\
+\end{tabular}
+\captionof{table}{HiSPARC sample data for exercise 2.}\label{tab:data}
+
+\begin{enumerate}[-]
+\item Looking for a suitable value for $k$ in equation~\ref{eq:S_r} works best when we start with a reasonable starting value. From earlier experiments we know the particle density produced by high energy cosmic radiation. On the surface of the Earth, at a distance of 100 metres from the shower core (rougly equal to the Moli\`ere radius) there are in the order of magnitude of 100 muons per metre squared: $S(r_0)\approx 100$. \\ Calculate, using equation~\ref{eq:S_r} and the given constants, the value for $k$ in this situation. The results of this calculation will be used as our initial value (guess) in the search for the `real' value of $k$ for our measurement of table~\ref{tab:data}.
+\item Now that we have a first guess for the value of $k$, the second step is to make an initial guess for the location of the shower core. We will denote the location of the shower core with $P$ from now on. With an estimate of $P$ we can improve our guess of $k$. Use a spreadsheet application\footnotemark ~to draw the $S(r),r$-graph using your first guess of $k$. You can also use a sample spreadsheet which can be found at:\\
+\protect{\url{www.fisme.science.uu.nl/hisparc/downloads/rekenblad_1_energie_3-8.xls}} \\
+Make a second drawing in which you display the locations of the detectors in the XY-plane and the measured particle densities. Use the graph and the drawing to make an estimate of $P$, assume that the shower core is located inside the triangle ABC. Also make a new estimate of $k$.
+\item We can use the results of the previous step to improve our estimate of $P$ and $k$ another time. Use your spreadsheet program to calculate the distance between the shower core $P$ and the detectors A, B, and C. Use these distances to calculate the particle density $S$ according to your estimate of $k$. If you are unsure how to do this you can use the sample spreadsheet:\\
+\protect{\url{www.fisme.science.uu.nl/hisparc/downloads/rekenblad_2_energie_3-8.xls}}\\
+Because you are using a spreadsheet program to do all the calculations for you, you can play around with the numbers until the calculated particle densities are (very) close to the measured values in table~\ref{tab:data}. This will be your best estimate.
+\item Use equation~\ref{eq:S_r} and \ref{eq:E_0} with the AGASA values for the constants and your estimation of $k$ to calculate $ E_0$.
+\item Explain why this value for the energy of the primary cosmic ray is the lower limit for the energy.
+\end{enumerate}\end{shaded}
+\footnotetext{Such as Microsoft Excel or LibreOffice Calc.}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : In the previous exercise you estimated the lower limit of the energy of a primary particle. To do this you had to follow a number of steps; a procedure or algorithm. Try to write down these steps in a concise and clear manner.\end{shaded}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : In exercise 2 your best estimation for the lower limit of the energy was based on the data from three detectors, a threefold (or triple) coincidence. The determination of the core location $P$ and the value of $k$ will be more accurate if we know more about the particle density distribution. This means that we need to have more measurements of the particle density: more detectors. Is it possible to estimate the particle energy if we only have data from two detectors? If so, what assumptions do you need to make?\end{shaded}
+
+\begin{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : In the module `Primary Particle - Angle' we determined the direction of the first threefold coincidence measured by the HiSPARC network. In the table below the data from this event are shown including the particle densities at the detectorstations.\\
+Use this data to calculate the lower limit for the energy of the primary particle. Follow your own procedure from exercise 3.\\
+
+\begin{tabular}[h] {l r r r r}
+Detector station & $x$-coordinate~(m) & $y$-coordinate~(m) & arrival time $t$~(\textmu s) \\ \hline
+A & 0.0 & 0.0 & 52.7 & 3\\
+B & 438.8 & 277.6 & 52.8 & 2\\
+C & 282.1 & -749.4 & 53.9 & 3\\
+\end{tabular}
+\captionof{table}{First HiSPARC threefold coincidence event data.}\label{tab:data_2}
+\end{shaded}
+
+\section{Improving the Estimations}
+In the previous exercises we used values for the constants $\alpha$, $\eta$, $r_0$, and $\epsilon$ as determined for the AGASA network. These values might not be valid for the HiSPARC network because they partly depend on the design and set-up of the detectors. For the HiSPARC network the `exact' values of these constants still have to be determined.
+
+Then there is a second question: how do we determine the particle density from the HiSPARC detector signal? 
+
+\begin{shaded}
+\noindent \textbf{Procedure}
+\\ \indent In exercise 3 you described the procedure you followed to make a best estimate of the lower limit of the primary particle energy. Important steps were the estimation of the position $P$ (location shower core) and the value of the constant $k$ to be used in equation~\ref{eq:S_r}. The method used was (hopefully) already fairly systematic.
+1
+We can improve the procedure making it more systematic but also more time consuming:
+\begin{enumerate}[-]
+\item Draw a grid of cells each representing an area of 100 by 100 metres. Mark the positions of the detector stations A, B, and C in this grid. Note the measured particle densities $G_A$, $G_B$, and $G_C$ on the correct locations.
+\item Create a spreadsheet with all possible locations (coordinates) of $P$. Only points on the grid are valid locations.
+\item Use the same spreadsheet to calculate the distances $r_{PA}$, $r_{PB}$, and $r_{PC}$ from each point $P$ to the detector locations A, B, and C. 
+\item Use equation~\ref{eq:S_r} in the spreadsheet to calculate the particle densities $S_A$, $S_B$, and $S_C$ in the points A, B, and C (i.e. $S(r_{PA})$, $S(r_{PB})$, and $S(r_{PC})$). Use the previously determined initial guess of $k$.
+\item Let the spreadsheet calculate the deviation $V^2$ between the calculated particle densities $S_A$, $S_B$, and $S_C$ and the measured densities $G_A$, $G_B$, and $G_C$ using the following formula:
+\begin{equation}
+V^2 = \left( G_A - S_A \right)^2 + \left( G_B - S_B \right)^2 + \left( G_C - S_C \right)^2
+\end{equation}
+\item Search in the results for the lowest value of $V^2$. The position $P$ belonging to this value is the first estimate of $P$.
+\item Repeat the steps above with a more finely meshed grid centered around the first estimate of $P$. Try to minimize the deviation $V^2$ (get as close to zero as possible) by choosing the most likely position of $P$ and varying the value of $k$. Keep checking if the calculated particle densities match the measured densities.
+\item Finally, determine your best guess of $P$ and the accompanying value for $k$.
+\end{enumerate}
+\end{shaded} 
+
+\end{document}
