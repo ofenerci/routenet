@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>RouteNet</title>
+  <meta name="author" content="N.G. Schultheiss" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/routenet.css" />
+  <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="scripts/highlight.js"></script>
+</head>
+
+<body>
+
+<!-- Iedere cel ('<td>') bevat de attributen 'id' en 'title', eventueel is 'title' leeg. -->
+<!-- Het attribuut 'id' bevat de naam van de instantie, bijvoorbeeld: 'kl3'. -->
+<!-- Het attribuut 'title' bevat de namen van de hierop volgende instanties, bijvoorbeeld: 'spg,lzn,hml,kl4'. -->
+
+<table id="routenet" border="0">
+  <tbody>
+    <tr>
+      <td rowspan="4" id="kl3" title='spg,lzn,hml,kl4' class="nietGekozen">
+        KS3
+      </td>
+      <td id="spg" title='prs,lzn' class="nietGekozen">
+        <a href="Mirrors.pdf">Mirrors</a>
+      </td>
+      <td id="prs" title='lzs' class="nietGekozen">
+        <a href="Parabolic_Mirrors.pdf">Parabolic Mirrors</a>
+      </td>
+      <td colspan="1" rowspan="2" class="empty"></td>
+      <td rowspan="2" class="empty">
+        <a href="http://www.hisparc.nl" target="_blank">
+          <img width="125" height="42" src="images/header.png" /></a>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="lzn" title='lzs,tls' class="nietGekozen">
+        <a href="Lenses.pdf">Lenses</a>
+      </td>
+      <td id="lzs" title='tls' class="nietGekozen">
+        <a href="Grinding_Lenses.pdf">Grinding Lenses</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" id="tls" title='exh' class="nietGekozen">
+        <a href="Telescopes.pdf">Telescopes</a>
+      </td>
+      <td rowspan="3" id="exh" title='rtl,exh' class="nietGekozen">
+        <a href="The_Expanding_Universe.pdf">The Expanding<br />Universe</a>
+      </td>
+      <td rowspan="3" id="rtl" title='din' class="nietGekozen">
+        <a href="Radio_Telescopes.pdf">Radio Telescopes</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="hml" title='hll' class="nietGekozen">
+        <a href="The_Sky.pdf">The Sky</a>
+      </td>
+      <td id="hll" title='exh' class="nietGekozen">
+        <a href="The_Universe.pdf">The Universe</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td rowspan="5" id="kl4" title='zon,vdw,bts,SE,kl5' class="nietGekozen">
+        KS4
+      </td>
+      <td rowspan="2" id="zon" title='klr,znw' class="nietGekozen">
+        <a href="The_Sun.pdf">The Sun</a>
+      </td>
+      <td class="nietGekozen" title='exh' id="klr">
+        <a href="Colour.pdf">Colour</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="1" id="znw" title='kms' class="nietGekozen">
+        <a href="Solar_Winds.pdf">Solar Winds</a>
+      </td>
+      <td colspan="2" rowspan="2" id="kms" title='tsj,cmp' class="nietGekozen">
+        <a href="Introduction_Cosmic_Radiation.pdf">Introduction Cosmic Radiation</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" id="vdw" title='kms' class="nietGekozen">
+        <a href="van_der_Waals_Wilson.pdf">van der Waals & Wilson</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="SE" title='ON' class="nietGekozen">
+        <a href="Stellar_Evolution.pdf">Stellar Evolution</a>
+      </td>
+      <td id="ON" title='BR' class="nietGekozen">
+        <a href="Early_Research_into_Cosmic_Radiation.pdf">Early Research into<br />Cosmic Radiation</a>
+      </td>
+      <td id="BR" title='ED' class="nietGekozen">
+        <a href="Sources_of_Cosmic_Radiation.pdf">Sources of<br />Cosmic Radiation</a>
+      </td>
+      <td rowspan="3" id="tsj" title='din' class="nietGekozen">
+        <a href="Cherenkov.pdf">Cherenkov</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="bts" title='cmp' class="nietGekozen">
+        <a href="Collisions.pdf">Collisions</a>
+      </td>
+      <td rowspan="2" id="cmp" title='flr' class="nietGekozen">
+        <a href="Compton.pdf">Compton</a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4" id="kl5" title='kl6,mam,ED,dct,std' class="nietGekozen">
+        KS5 - 1
+      </td>
+      <td id="mam" title='rlt' class="nietGekozen">
+        <a href="Michelson_Morley.pdf">Michelson & Morley</a>
+      </td>
+      <td id="rlt" title='cmp,dar' class="nietGekozen">
+        <a href="Relativity.pdf">Relativity</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="dct" title='brg' class="nietGekozen">
+        <a href="The_HiSPARC_Detector.pdf">The HiSPARC Detector</a>
+      </td>
+      <td class="nietGekozen" title='flr' id="brg">
+        <a href="de_Brolie.pdf">de Broglie</a>
+      </td>
+      <td colspan="2" id="flr" title='din' class="nietGekozen">
+        <a href="Fluorescence.pdf">Fluorescence</a>
+      </td>
+    </tr>
+    <tr>
+      <td id="ED" title='MV' class="nietGekozen">
+        <a href="Elementary_Particles.pdf">Elementary Particles</a>
+      </td>
+      <td id="MV" title='AS' class="nietGekozen">
+        <a href="Muon_Decay.pdf">Muon Decay</a>
+      </td>
+      <td id="AS" title='DE' class="nietGekozen">
+        <a href="Air_Showers.pdf">Air Showers</a>
+      </td>
+      <td rowspan="2" class="empty"></td>
+    </tr>
+
+    <tr>
+      <td id="std" title='stk' class="nietGekozen">
+        <a href="Standard_Model_Particles.pdf">Standard Model<br />Particles</a>
+      </td>
+      <td id="stk" title='dar' class="nietGekozen">
+        <a href="Standard_Model_Forces.pdf">Standard Model<br />Forces</a>
+      </td>
+      <td id="dar" title='flr' class="nietGekozen">
+        <a href="Collisions_inside_Air_Showers.pdf">Collisions inside<br />Air Showers</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td rowspan="3" id="kl6" title='din,DE' class="nietGekozen">
+        KS5 - 2
+      </td>
+      <td id="din" title='dvw' class="nietGekozen">
+        <a href="Data_Processing_Periodic_Data.pdf">Data Processing<br/>Periodic Data</a>
+      </td>
+      <td id="dvw" title='' class="nietGekozen">
+        <a href="Data_Processing_Non-periodic_Data.pdf">Data Processing<br />Non-periodic Data</a>
+      </td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+    </tr>
+
+    <tr>
+      <td id="DE" title='DI,DS' class="nietGekozen">
+        <a href="HiSPARC_Detector_Single_Detector.pdf">HiSPARC Detector<br />Single Detector</a>
+      </td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+      <td id="DS" title='DI' class="nietGekozen">
+        <a href="HiSPARC_Detector_Detector_Station.pdf">HiSPARC Detector<br />Detector Station</a>
+      </td>
+     </tr>
+
+     <tr>
+      <td id="DI" title='DN' class="nietGekozen">
+        <a href="HiSPARC_Detector_Detector_Installation.pdf">HiSPARC Detector<br />Detector Installation</a>
+      </td>
+      <td id="DN" title='RD' class="nietGekozen">
+        <a href="HiSPARC_Detector_Detector_Array.pdf">HiSPARC Detector<br />Detector Array</a>
+      </td>
+      <td id="RD" title='EP' class="nietGekozen">
+        <a href="Primary_Particle_Angle.pdf">Primary Particle<br />Angle</a>
+      </td>
+      <td id="EP" title='' class="nietGekozen">
+        <a href="Primary_Particle_Energy.pdf">Primary Particle<br />Energy</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
