@@ -35,3 +35,9 @@ a:link {text-decoration: none; color: black;}
 a:visited {text-decoration: none; color: #303030;}
 a:active {text-decoration: none; color: black;}
 a:hover {text-decoration: none; color: blue;}
+
+
+#footer {
+    margin: 10px auto;
+    width: 775px;
+    font-size: 0.8em;}
