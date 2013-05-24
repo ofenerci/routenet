@@ -48,16 +48,16 @@
 Obtaining data from a single HiSPARC detector is very easy. All data is available from \url{http://data.hisparc.nl/} . This module explains how to import the data into a spreadsheet application and perform a number of analyses.
 
 \section{Getting the data}
-Data can be downloaded via \url{http://data.hisparc.nl/} . This page shows all registered HiSPARC detectors, active detectors are shown as links. Clicking on a detector link shows the last day with available data. In figure \ref{fig:data_screen} the data from detector 13001, placed at the University of Bristol, from the 17th of June 2012 is shown as an example.
+Data can be downloaded via \url{http://data.hisparc.nl/} . This page shows all registered HiSPARC detectors, active detectors are shown as links. Clicking on a detector link shows the last day with available data. In figure \ref{fig:data_screen} the data from detector 13001, placed at the University of Bristol, from the 1st of November 2012 is shown as an example.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.35]{Screenshot_HiSPARC_Station_13001.eps}
+\includegraphics[scale=0.6]{Data_HiSPARC_Station_13001.pdf}
 \caption{Information available via \protect\url{http://data.hisparc.nl/} .}\label{fig:data_screen}
 \end{center}\end{figure}
 
 This page shows the measurement data on the left and the detector settings on the right. Lets start at the top right of the page. The first thing we see is a small calendar. With this calendar we can browse to specific dates and look at the results from that day. The link `Station List' brings us back to the overview of detector stations.
 
-Below the calendar is the position of the detector with a link to `Openstreetmap'. Here you can see the location on a map. Note that this location is not always accurate because it is only updated very rarely.
+Below the calendar is the position of the detector with a the location on a map.
 
 Below the location some hardware parameters are listed. Station 13001 has four detector plates and thus uses two electronics boxes, one master and one slave. Here you can see the hardware number, its firmware version, and the voltage supplied to the different photomultiplier tubes.
 
@@ -68,7 +68,7 @@ On the left hand side of the page the actual data is shown. There are three grap
 \item[Pulse integral histogram] shows the integral of the registered coincidences.
 \end{description}
 
-The data that is used to generate these graphs can be directly downloaded from this site. In the top right corner of every graph there is a link to the source data `Source'. The data is saved in a comma separated value file (.csv). The contents of the file should look something like figure \ref{fig:data_CSV}.\footnote{Windows systems do not always correctly recognise the file settings of the .csv file. If this is the case you should use the second import method for Excel described in this module.} The top of the file gives a short description of the file contents. In the example of figure \ref{fig:data_CSV} the station registered 792 coincidences between 2 a.m. and 3 a.m.
+The data that is used to generate these graphs can be directly downloaded from this site. In the top right corner of every graph there is a link to the source data `Source'. The data is saved in a comma separated value file (.csv). The contents of the file should look something like figure \ref{fig:data_CSV}.\footnote{Windows systems do not always correctly recognise the file settings of the .csv file. If this is the case you should use the second import method for Excel described in this module.} The top of the file gives a short description of the file contents. In the example of figure \ref{fig:data_CSV} the data of 17th of June 2012 by station 13001 is used. It registered 792 coincidences between 2 a.m. and 3 a.m.
 
 \begin{figure}\begin{center}
 \includegraphics[scale=0.5]{Screenshot_CSV_data_HiSPARC_Station_13001.eps}
