@@ -1,34 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Telescopen}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -48,7 +27,7 @@ ook wel het objectief genoemd. Het objectief zit het dichtst object
 (voorwerp) dat men bekijkt. Het optisch element dat het dichtst bij
 het oog (oculus) zit, noemt men het oculair.
 
-De telescoop die door Galileo Galileï tijdens de renaisance werd gebruikt
+De telescoop die door Galileo GalileÃ¯ tijdens de renaisance werd gebruikt
 was een refractor. Deze telescoop had een speciale constructie, met
 een bol objectief en een hol oculair, en wordt ook wel de hollandse
 kijker genoemd. 
@@ -69,7 +48,7 @@ kijker genoemd.
 
 De hollandse kijker werd in de $17^{e}$ eeuw verbeterd door Christiaan
 Huygens met een nieuw soort oculair. Dit oculair bestaat uit twee
-lenzen, samen werken deze als één lens. Dit nieuwe oculair is in de
+lenzen, samen werken deze als Ã©Ã©n lens. Dit nieuwe oculair is in de
 $18^{e}$ eeuw nog eens door Jesse Ramsden aangepast.
 
 
@@ -117,7 +96,7 @@ Eind $17^{e}$ eeuw / begin $18^{e}$ eeuw gebruikte Friedrich Wilhelm
 Herschel achtereenvolgens steeds grotere refractors om het zonnestelsel
 en de sterren te bestuderen. Hij kwam op het idee dat het zonnestelsel
 deel uitmaakte van het melkwegstelsel. Zijn zus Caroline Lucretia
-Herschel heeft deze telescopen ook gebruikt om de asteroïden te bestuderen.
+Herschel heeft deze telescopen ook gebruikt om de asteroÃ¯den te bestuderen.
 Zijn zoon John Frederick William Herschel zette hun werk voort en
 experimenteerde daarnaast ook met fotografisch materiaal.
 
@@ -152,19 +131,22 @@ Na het objectief zien we de hoek tussen de hoofdas en de lichtstraal
 als $\angle\mathrm{BF_{Oculair}O_{Oculair}}$.
 
 \begin{equation}
-tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})=\frac{\mathrm{B}\mathrm{O_{Oculair}}}{\mathrm{F_{Oculair}O_{Oculair}}}
+\tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})
+=\frac{\mathrm{B}\mathrm{O_{Oculair}}}{\mathrm{F_{Oculair}O_{Oculair}}}
 \end{equation}
 
 
 \begin{equation}
-tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})=\frac{\mathrm{A}\mathrm{O_{Objectief}}}{\mathrm{F_{Objectief}O_{Objectief}}}
+\tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})
+=\frac{\mathrm{A}\mathrm{O_{Objectief}}}{\mathrm{F_{Objectief}O_{Objectief}}}
 \end{equation}
 
 
 Deze formules delen we op elkaar:
 
 \begin{equation}
-\frac{tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})}{tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})}=\frac{\left(\frac{\mathrm{B}\mathrm{O_{Oculair}}}{\mathrm{F_{Oculair}O_{Oculair}}}\right)}{\left(\frac{\mathrm{A}\mathrm{O_{Objectief}}}{\mathrm{F_{Objectief}O_{Objectief}}}\right)}
+\frac{\tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})}{\tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})}
+=\frac{\left(\frac{\mathrm{B}\mathrm{O_{Oculair}}}{\mathrm{F_{Oculair}O_{Oculair}}}\right)}{\left(\frac{\mathrm{A}\mathrm{O_{Objectief}}}{\mathrm{F_{Objectief}O_{Objectief}}}\right)}
 \end{equation}
 
 
@@ -172,14 +154,16 @@ De twee lijnstukken $\mathrm{A}\mathrm{O_{Objectief}}$ en $\mathrm{B}\mathrm{O_{
 hebben dezelfde lengte:
 
 \begin{equation}
-\frac{tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})}{tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})}=\frac{\mathrm{F_{Objectief}O_{Objectief}}}{\mathrm{F_{Oculair}O_{Oculair}}}
+\frac{\tan(\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}})}{\tan(\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}})}
+=\frac{\mathrm{F_{Objectief}O_{Objectief}}}{\mathrm{F_{Oculair}O_{Oculair}}}
 \end{equation}
 
 
 Voor kleine hoeken geldt dat de tangens van de hoek gelijk is aan
 de hoek in radialen:
 \begin{equation}
-\frac{\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}}}{\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}}}=\frac{\mathrm{\mathit{f}_{Objectief}}}{\mathrm{\mathit{f}_{Oculair}}}
+\frac{\angle\mathrm{B}\mathrm{F_{Oculair}O_{Oculair}}}{\angle\mathrm{A}\mathrm{F_{Objectief}O_{Objectief}}}
+=\frac{\mathrm{\mathit{f}_{Objectief}}}{\mathrm{\mathit{f}_{Oculair}}}
 \end{equation}
 
 
@@ -191,9 +175,10 @@ Hoekvergroting=\frac{\mathrm{\mathit{f}_{Objectief}}}{\mathrm{\mathit{f}_{Oculai
 
 \paragraph*{Opdracht 4:}
 
-\emph{Christiaan Huygens bouwde telescopen. Hij ontdekte Titan met
-een telescoop met $f_{\mathrm{objectief}}=12[\mathrm{voet}]$ en $f_{\mathrm{oculair}}=3[\mathrm{duim}]$.
-Bereken de vergroting van de telescoop waarmee hij Titan ontdekte.}
+\emph{Christiaan Huygens bouwde telescopen. Hij ontdekte Titan met een
+telescoop met $f_{\mathrm{objectief}}=12[\mathrm{voet}]$ en
+$f_{\mathrm{oculair}}=3[\mathrm{duim}]$. Bereken de vergroting van de
+telescoop waarmee hij Titan ontdekte.}
 
 
 \subsection{De resolutie}
@@ -225,7 +210,7 @@ De kleinste hoek die met een telescoop te zien is, is met de sinus
 of de tangens te berekenen:
 
 \begin{equation}
-sin(\alpha)\thickapprox tan(\alpha)\approx\frac{\lambda}{Diameter}
+\sin(\alpha)\approx \tan(\alpha)\approx\frac{\lambda}{Diameter}
 \end{equation}
 
 
@@ -263,4 +248,5 @@ zo klein.
 geeft 1000000 minder licht geeft dan de zon. In werkelijkheid geeft
 de Aarde natuurlijk veel minder licht. Welke gevolgen heeft dit voor
 de nauwkeurigheid van de meting en daarmee de grootte van de telescoop?}
+
 \end{document}

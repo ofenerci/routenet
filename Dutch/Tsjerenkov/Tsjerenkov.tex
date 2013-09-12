@@ -1,33 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Tsjerenkov}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -44,29 +24,26 @@ te verklaren. Bij geleidende stoffen zit een deel van de soortelijke
 warmte in het elektronen gas. De soortelijke warmte van stoffen valt
 echter buiten dit betoog. 
 
-\newpage{}
-
 
 \section{Tsjerenkov}
 
 Pavel Aleksejevitsj Tsjerenkov onderzocht de straling die bijvoorbeeld
 in het reactorvat van een kerncentrale plaatsvindt. Dit vat is meestal
-gevuld met water. Water werkt in dit geval zowel als koelmiddel als
-als mo\-de\-rator%
-\footnote{Een moderator remt de neutronen bij een kernreactie af, zodat ze weer
-kunnen reageren met een volgende te splitsen kern. Zonder moderator
-zullen de te snelle neutronen uit de reactor ontsnappen zonder dat
-ze een nieuwe reactie starten. De reactor stopt dan. Bij teveel trage
-neutronen loopt de reactie ook uit de hand. Teveel kernen reageren
-en we spreken van een melt-down (Harrisburg / Tsjernobyl).%
-}.
+gevuld met water. Water werkt in dit geval zowel als koelmiddel als als
+moderator\footnote{Een moderator remt de neutronen bij een
+kernreactie af, zodat ze weer kunnen reageren met een volgende te
+splitsen kern. Zonder moderator zullen de te snelle neutronen uit de
+reactor ontsnappen zonder dat ze een nieuwe reactie starten. De reactor
+stopt dan. Bij teveel trage neutronen loopt de reactie ook uit de hand.
+Teveel kernen reageren en we spreken van een melt-down (Harrisburg /
+Tsjernobyl).}.
 
 Zoals we hebben gezien bij de Geigerteller kunnen deeltjes electronen
 in een medium wegbotsen. De electronen springen dan als het ware naar
 een een hogere aangeslagen energietoestand. Bij Tsjerenkov-straling
 vallen deze electronen praktisch direct terug en zenden de energie
 als foton uit. Als dit in water gebeurt, zal de snelheid van het foton
-niet de lichtsnelheid zijn maar $c_{medium}=\frac{c}{N_{medium}}$.
+niet de lichtsnelheid zijn maar $c_{medium}=\frac{\mathrm{c}}{N_{medium}}$.
 Het deeltje kan echter wel een hogere snelheid dan $c_{medium}$ hebben.
 We nemen nu een deeltje waar dat sneller gaat dan de lichtsnelheid
 in het medium. Net als bij een supersoon vliegtuig zendt het deeltje
@@ -86,9 +63,6 @@ puls iets breder.
 
 \caption{Een schematische voorstelling van Tsjerenkov-straling}
 \end{figure}
-
-
-\newpage{}
 
 
 \section{Licht in stoffen}

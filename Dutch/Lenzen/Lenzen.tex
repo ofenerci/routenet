@@ -1,34 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Lenzen}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -83,14 +62,13 @@ uit.
 
 \section{De werking van een lens}
 
-Lenzen werken doordat licht en materie op elkaar inwerken. Als er
-geen materie is, beweegt het licht met de lichtsnelheid%
-\footnote{In 1676 stelde Ole Rømer de lichtsnelheid vast op 225 000 km/s. Hij
-vond deze snelheid door de tijden te vergelijken, waarop de maan Io
-van Jupiter achter Jupiter (eclips) tevoorschijn komt (dit is beschreven
-op wikipedia). %
-} $c$. Tegenwoordig definieert men de eenheid {[}m{]} uit de lichtsnelheid
-in vacuum en geldt $c=299792458\mathrm{[m/s]}$ exact.
+Lenzen werken doordat licht en materie op elkaar inwerken. Als er geen
+materie is, beweegt het licht met de lichtsnelheid \footnote{In 1676
+stelde Ole RÂ¯mer de lichtsnelheid vast op 225 000 km/s. Hij vond deze
+snelheid door de tijden te vergelijken, waarop de maan Io van Jupiter
+achter Jupiter (eclips) tevoorschijn komt (dit is beschreven op
+wikipedia). } $c$. Tegenwoordig definieert men de eenheid {[}m{]} uit de
+lichtsnelheid in vacuum en geldt $c=299792458\mathrm{[m/s]}$ exact.
 
 Het zal duidelijk zijn dat licht alleen door doorzichtige materie
 gaat. De lichtsnelheid neemt dan echter altijd af. Het licht gaat
@@ -122,13 +100,13 @@ loodrecht op de golfstraal staat: $\angle\mathrm{BAC}=\angle\mathrm{BDC}=90^{o}$
 
 \paragraph*{Opdracht 2:}
 
-\emph{Leg uit hoe je de waarde van $sin(\angle\mathrm{ABC})$ kunt
+\emph{Leg uit hoe je de waarde van $\sin(\angle\mathrm{ABC})$ kunt
 bepalen.}
 
 
 \paragraph*{Opdracht 3:}
 
-\emph{Leg uit hoe je de waarde van $sin(\angle\mathrm{BCD})$ kunt
+\emph{Leg uit hoe je de waarde van $\sin(\angle\mathrm{BCD})$ kunt
 bepalen.}
 
 
@@ -137,7 +115,8 @@ bepalen.}
 \emph{Toon aan dat de onderstaande formule geldt:}
 
 \[
-\frac{sin(\angle\mathrm{ABC})}{sin(\angle\mathrm{BCD})}=\frac{(\mathrm{AC})}{(\mathrm{BD})}
+\frac{\sin(\angle\mathrm{ABC})}{\sin(\angle\mathrm{BCD})}
+=\frac{(\mathrm{AC})}{(\mathrm{BD})}
 \]
 
 
@@ -161,16 +140,14 @@ en de normaal).}
 
 \paragraph*{Opdracht 7:}
 
-Verklaar de onderstaande formule%
-\footnote{Deze formule is in Nederland bekend onder de naam: ``De wet van Snellius''.
-Hij is vernoemd naar Willibrord Snell van Royen, die een dergelijk
-relatie voor het eerst wiskundig opschreef. Deze schrijfwijze is echter
-door René Descartes geformuleerd, in Frankrijk is dit dus de wet van
-Descartes.%
-}:
+Verklaar de onderstaande formule \footnote{Deze formule is in Nederland
+bekend onder de naam: ``De wet van Snellius''. Hij is vernoemd naar
+Willibrord Snell van Royen, die een dergelijk relatie voor het eerst
+wiskundig opschreef. Deze schrijfwijze is echter door RenÃ© Descartes
+geformuleerd, in Frankrijk is dit dus de wet van Descartes.}:
 
 \[
-N=\frac{sin(i)}{sin(r)}
+N=\frac{\sin(i)}{\sin(r)}
 \]
 
 
@@ -312,4 +289,5 @@ en }2,0{[}cm{]}\emph{ van de hoofdas.}
 
 Als je nauwkeurig met een scherp potlood hebt gewerkt, krijg je toch
 geen scherp brandpunt. Deze lensfout noemt men sferische abberatie.
+
 \end{document}

@@ -1,70 +1,49 @@
-%% LyX 1.6.5 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[letterpaper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
-
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
+\input{../style}
 
 \begin{document}
 
 \title{Data verwerking zonder periodieke afhankelijkheid}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
-Deze module volgt op de module {}``Data verwerking met periodieke
+Deze module volgt op de module ``Data verwerking met periodieke
 afhankelijkheid'', waarin werd uitgelegd hoe je een spreadsheet met
-gegevens van de detectoren kunt maken. Hier werd uitgelegd hoe conclusies
-te trekken zijn, als er sprake is van een periodieke afhankelijkheid.
-In het geval van de afhankelijkheid van weersverschijnselen zoals
-bliksem, zal dit niet periodiek zijn. Het is namelijk niet zo dat
-er om een bepaalde tijd een bliksemflits wordt gegenereerd. 
+gegevens van de detectoren kunt maken. Hier werd uitgelegd hoe
+conclusies te trekken zijn, als er sprake is van een periodieke
+afhankelijkheid. In het geval van de afhankelijkheid van
+weersverschijnselen zoals bliksem, zal dit niet periodiek zijn. Het is
+namelijk niet zo dat er om een bepaalde tijd een bliksemflits wordt
+gegenereerd. 
 
 
 \section{De opstelling}
 
-Een opstelling die bijvoorbeeld op school gebruikt wordt, bestaat
-uit (groepen van) twee detectoren. Om een shower van de achtergrondstraling
-te isoleren, zoeken we coïncidenties. Dit wil zeggen dat er (praktisch)
-tegelijk deeltjes in de twee verschillende detectoren worden gedetecteerd.
-De shower wordt boven in de atmosfeer gestart door de botsing van
-kosmische straling met kerndeeltjes%
-\footnote{Verwijzing naar {}``Interactie van kosmische straling en aardatmosfeer''.%
-}. Deze botsing veroorzaakt een kettingreactie, waardoor een shower
-van deeltjes door de atmosfeer gaat. Een deel van deze shower wordt
-in de atmosfeer geabsorbeerd, een deel komt op Aarde bij de detector.
-In de praktijk kunnen we zeggen dat de deeltjes bijna loodrecht op
-de Aarde vallen, de hoek van inval is meestal kleiner dan $20^{o}$
-met het zenith%
-\footnote{Het zenith is het punt recht boven je hoofd. Ieder mens (en iedere
-plaats) heeft een eigen zenith.%
-}.
+Een opstelling die bijvoorbeeld op school gebruikt wordt, bestaat uit
+(groepen van) twee detectoren. Om een shower van de achtergrondstraling
+te isoleren, zoeken we coincidenties. Dit wil zeggen dat er (praktisch)
+tegelijk deeltjes in de twee verschillende detectoren worden
+gedetecteerd. De shower wordt boven in de atmosfeer gestart door de
+botsing van kosmische straling met kerndeeltjes \footnote{Verwijzing
+naar {}``Interactie van kosmische straling en aardatmosfeer''.}. Deze
+botsing veroorzaakt een kettingreactie, waardoor een shower van deeltjes
+door de atmosfeer gaat. Een deel van deze shower wordt in de atmosfeer
+geabsorbeerd, een deel komt op Aarde bij de detector. In de praktijk
+kunnen we zeggen dat de deeltjes bijna loodrecht op de Aarde vallen, de
+hoek van inval is meestal kleiner dan $20^{o}$ met het zenith
+\footnote{Het zenith is het punt recht boven je hoofd. Ieder mens (en
+iedere plaats) heeft een eigen zenith.}.
 
-%
 \begin{figure}[h]
-\includegraphics[width=17.6cm]{\string"Screenshot-Astronomical Time Calculations\string".png}
+\centering
+
+\includegraphics[width=16cm]{Astronomical_Time_Calculations}
 
 \caption{Een conversie pagina}
-
 \end{figure}
 
 
@@ -81,15 +60,13 @@ http://www.go.ednet.ns.ca/\textasciitilde{}larry/orbits/jsjdetst.html
 
 \section{Gegevens ophalen}
 
-Gegevens kunnen opgehaald worden op: http://www.hisparc.nl/hisparc-data/data/.
-Je kunt deze URL in zijn geheel intypen of naar hisparc.nl gaan. Op
-de home-page kun je op het figuurtje van {}``data analyse'' klikken.
-Eventueel klik je hierna in de kantlijn op {}``data''. Er verschijnt
-een lijst met detectoren. Klik op je op een detector, dan krijg je
-een pagina met de gegevens van de detector. Van boven naar beneden
-zie je een histogram met het aantal coïncidenties per uur, een grafiek
-met het aantal pulsen tegen de pulshoogte in mV en een grafiek met
-het aantal pulsen tegen het oppervlak van de puls in mVps.
+Gegevens kunnen opgehaald worden op: http://data.hisparc.nl/. Er
+verschijnt een lijst met station locaties. Klik je op een station, dan
+krijg je een pagina met de gegevens van die detectoren. Van boven naar
+beneden zie je een histogram met het aantal coÃ¯ncidenties per uur, een
+grafiek met het aantal pulsen tegen de pulshoogte in mV (millivolt) en
+een grafiek met het aantal pulsen tegen het oppervlak van de puls in
+mVns (millivolt nanoseconde).
 
 Rechts naast de grafieken is een kolom met daarin de datum van de
 metingen en verschillende eigenschappen van het meetstation zoals
@@ -100,15 +77,16 @@ dan krijg je een {*}.csv (comma separated values) bestand. Dit is
 in een spreadsheet programma te laden. Soms moet je aangeven dat de
 informatie door komma's gescheiden is.
 
-%
 \begin{figure}[h]
-\includegraphics[width=17.6cm]{\string"Screenshot-Data HiSPARC\string".png}
+\centering
+
+\includegraphics[width=14cm]{HiSPARC_Public_Database}
 
 \caption{Het data venster}
-
 \end{figure}
 
 
 Nu deze gegevens bekend zijn, kunnen we onderzoeken of deze gegevens
 afhangen van andere grootheden. 
+
 \end{document}

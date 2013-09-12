@@ -1,49 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{array}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% Because html converters don't know tabularnewline
-\providecommand{\tabularnewline}{\\}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-\newenvironment{lyxcode}
-{\par\begin{list}{}{
-\setlength{\rightmargin}{\leftmargin}
-\setlength{\listparindent}{0pt}% needed for AMS classes
-\raggedright
-\setlength{\itemsep}{0pt}
-\setlength{\parsep}{0pt}
-\normalfont\ttfamily}%
- \item[]}
-{\end{list}}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{De Hemel}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -56,7 +20,7 @@ opgedane kennis een telescoop als meetinstrument toepassen.
 
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=16cm]{\string"Screenshot-Google Earth\string".png}
+\includegraphics[width=16cm]{Screenshot-Google-Earth}
 \par\end{centering}
 
 \caption{De Aarde met Google-Earth}
@@ -64,17 +28,16 @@ opgedane kennis een telescoop als meetinstrument toepassen.
 
 
 Op Google-Earth zie je onder in het scherm $52^{o}22'23.38"N$ en
-$4^{o}53'35.84"E$%
-\footnote{In Nederland gebruikt men een komma (,) na de eenheden en voor de
-tienden. In de meeste landen gebruikt men inplaats van de komma een
-punt (.).%
-} als je de Dam in Amsterdam aanwijst. Het aantal graden (52) is hier
-direct in te herkennen. Daarnaast staat $22'$, of in spreektaal 22
-(boog-)minuten. Net als bij de tijd waar 1 uur in 60 minuten wordt
-verdeeld, kun je 1 graad ook in 60 (boog-)minuten verdelen. Daarnaast
-zie je $23.38"$, of 23.38 (boog-)seconden, 1 (boog-)minuut is natuurlijk
-60 (boog-)seconden. Op deze manier kunnen we dus heel nauwkeurig een
-plaats met hoeken vastleggen. 
+$4^{o}53'35.84"E$ \footnote{In Nederland gebruikt men een komma (,) na
+de eenheden en voor de tienden. In de meeste landen gebruikt men
+inplaats van de komma een punt (.).} als je de Dam in Amsterdam
+aanwijst. Het aantal graden (52) is hier direct in te herkennen.
+Daarnaast staat $22'$, of in spreektaal 22 (boog-)minuten. Net als bij
+de tijd waar 1 uur in 60 minuten wordt verdeeld, kun je 1 graad ook in
+60 (boog-)minuten verdelen. Daarnaast zie je $23.38"$, of 23.38
+(boog-)seconden, 1 (boog-)minuut is natuurlijk 60 (boog-)seconden. Op
+deze manier kunnen we dus heel nauwkeurig een plaats met hoeken
+vastleggen. 
 
 Rond de Aarde lopen cirkels over de Noordpool en de Zuidpool, de helft
 van deze cirkel (van Noordpool naar Zuidpool) noemen we een meridiaan.
@@ -92,7 +55,8 @@ Een hoek met graden, boogminuten en boogseconden is om te zetten in
 een hoek met alleen graden en cijfers achter de komma:
 
 \[
-4^{o}53'35,84"=4^{o}+\left(\frac{53}{60}\right)^{o}+\left(\frac{35,84}{3600}\right)^{o}=\left(4+0,883333+0,009956\right)^{o}=4,893289^{o}
+4^{o}53'35,84"=4^{o}+\left(\frac{53}{60}\right)^{o}+\left(\frac{35,84}{3600}\right)^{o}
+=\left(4+0,883333+0,009956\right)^{o}=4,893289^{o}
 \]
 
 
@@ -134,7 +98,7 @@ Als je hier op klikt zie je de sterren aan de hemel.
 
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=16cm]{Screenshot}
+\includegraphics[width=16cm]{Screenshot-Google-Earth-Stars}
 \par\end{centering}
 
 \caption{De hemel met Google-Earth}
@@ -171,11 +135,10 @@ het Lentepunt.
 \paragraph*{Opdracht 3:}
 
 \emph{Ga in Google-Earth in de hemel naar een rechte klimming van
-0h0m0s}%
-\footnote{Ik volg hier de notatie van Google-earth. Meestal wordt de 0h0m0s
-opgeschreven als 0:0:0.%
-}\emph{ en een declinatie van $0^{o}0'0"$. In welk sterrenbeeld /
-bij welk sterrenbeeld ligt dit punt? }
+0h0m0s} \footnote{Ik volg hier de notatie van Google-earth. Meestal
+wordt de 0h0m0s opgeschreven als 0:0:0.}\emph{ en een declinatie van
+$0^{o}0'0"$. In welk sterrenbeeld / bij welk sterrenbeeld ligt dit punt?
+}
 
 
 \paragraph*{Opdracht 4:}
@@ -189,15 +152,14 @@ Let op: De Declinatie is voor sterrenbeelden van de dierenriem niet
 altijd $0^{o}0'0"$! De cirkel is rond bij 24h0m0s.}
 
 Aan het begin van de lente staat de zon in het sterrenbeeld ``Vissen''.
-Dit klopt omdat de tijd begint te lopen vanaf het lentepunt%
-\footnote{Volgens de Astrologie is het lentepunt in het sterrenbeeld Ram. In
-de afgelopen 2000 jaar is de Aardas verdraaid en wijst deze naar een
-andere plaats aan de hemel. Het Lentepunt is daarom naar ``Vissen''
-geschoven.%
-}. Dit is overigens niet de normale Aardtijd die ten opzichte van de
-Zon wordt gemeten. Deze tijd is de tijd die ten opzichte van de sterren
-/ sterrenbeelden wordt gemeten, een soort hemelse tijd of ``Siderische
-tijd''.
+Dit klopt omdat de tijd begint te lopen vanaf het lentepunt
+\footnote{Volgens de Astrologie is het lentepunt in het sterrenbeeld
+Ram. In de afgelopen 2000 jaar is de Aardas verdraaid en wijst deze naar
+een andere plaats aan de hemel. Het Lentepunt is daarom naar ``Vissen''
+geschoven.}. Dit is overigens niet de normale Aardtijd die ten opzichte
+van de Zon wordt gemeten. Deze tijd is de tijd die ten opzichte van de
+sterren / sterrenbeelden wordt gemeten, een soort hemelse tijd of
+``Siderische tijd''.
 
 
 \paragraph*{Opdracht 5:}
@@ -223,7 +185,7 @@ Evenaar & \tabularnewline
 \section{Herschel en Messier}
 
 Fredrich Wilhelm Herschel verdiende zijn geld als muzikant en schreef
-onder andere verschillende symphoni�n. Hij had echter ook een grote
+onder andere verschillende symphoniën. Hij had echter ook een grote
 interesse in de hemel en bouwde daarom verschillende refractors waarmee
 hij de hemel bestudeerde.
 
@@ -234,47 +196,28 @@ van Messier en maakte zelf een catalogus van 2514 objecten in de verre
 ruimte.
 
 \begin{figure}[h]
-\begin{lyxcode}
-Name~~~~~Type~~~~~~~~~~R.~A.~~~Dec~~~~Size~Mag~~Con~Herschel
-
-~AR~~~37~Open~cluster~~11:32.5~+74\textasciitilde{}32~~~~~~~~~~~Dra~H969-3
-
-~IC~~434~Nebula~~~~~~~~~5:41.0~-~2\textasciitilde{}24~60.0~~~~~~Ori~H35-5~Barnard's~Loop
-
-~IC~2995~Galaxy~~~~~~~~12:05.8~-27\textasciitilde{}56~~3.1~13.5~Hya~H382-3
-
-~IC~4051~Galaxy~~~~~~~~13:00.9~+28\textasciitilde{}00~~1.1~13.2~Com~H363-3
-
-NGC~~~12~Galaxy~~~~~~~~~0:08.7~+~4\textasciitilde{}37~~1.9~14.1~Psc~H868-3
-
-NGC~~~13~Galaxy~~~~~~~~~0:08.8~+33\textasciitilde{}26~~2.7~13.6~And~H866-3
-
-NGC~~~14~Galaxy~~~~~~~~~0:08.8~+15\textasciitilde{}49~~3.0~12.1~Peg~H591-2
-
-NGC~~~16~Galaxy~~~~~~~~~0:09.1~+27\textasciitilde{}44~~2.1~12.0~Peg~H15-4~vF~interacting~pair
-
-NGC~~~23~Galaxy~~~~~~~~~0:09.9~+25\textasciitilde{}55~~2.3~12.0~Peg~H147-3
-
-NGC~~~24~Galaxy~~~~~~~~~0:09.9~-24\textasciitilde{}58~~5.5~11.5~Scl~H461-3~Nearly~edge-on
-
-NGC~~~29~Galaxy~~~~~~~~~0:10.8~+33\textasciitilde{}21~~1.8~12.6~And~H853-2
-
-NGC~~~36~Galaxy~~~~~~~~~0:11.4~+~6\textasciitilde{}23~~2.4~14.4~Psc~H456-3
-
-NGC~~~39~Galaxy~~~~~~~~~0:12.3~+31\textasciitilde{}03~~1.1~13.5~And~H861-3
-
-NGC~~~40~Planetary~neb~~0:13.0~+72\textasciitilde{}32~~~.3~10.7~Cep~H58-4~\textquotedbl{}400\textquotedbl{}
-
-NGC~~~52~Galaxy~~~~~~~~~0:14.6~+18\textasciitilde{}33~~2.4~13.3~Peg~H183-3
-
-NGC~~~57~Galaxy~~~~~~~~~0:15.4~+17\textasciitilde{}18~~2.6~11.6~Psc~H241-2~=~H243-2
-
-NGC~~~61A~Galaxy~~~~~~~~0:16.5~-~6\textasciitilde{}14~~1.1~14.7~Psc~H428-3
-
-NGC~~~68~Galaxy~~~~~~~~~0:18.3~+30\textasciitilde{}04~~1.5~13.0~And~H16-5
-
-NGC~~~95~Galaxy~~~~~~~~~0:22.2~+10\textasciitilde{}30~~1.9~12.6~Psc~H257-2~asym~uneven~arms~
-\end{lyxcode}
+\begin{verbatim}
+Name       Type          R.A.     Dec     Size  Mag   Con  Herschel
+ AR   37   Open cluster  11:32.5  +74~32              Dra  H969-3
+ IC  434   Nebula         5:41.0  - 2~24  60.0        Ori  H35-5 Barnard’s Loop
+ IC 2995   Galaxy        12:05.8  -27~56   3.1  13.5  Hya  H382-3
+ IC 4051   Galaxy        13:00.9  +28~00   1.1  13.2  Com  H363-3
+NGC   12   Galaxy         0:08.7  + 4~37   1.9  14.1  Psc  H868-3
+NGC   13   Galaxy         0:08.8  +33~26   2.7  13.6  And  H866-3
+NGC   14   Galaxy         0:08.8  +15~49   3.0  12.1  Peg  H591-2
+NGC   16   Galaxy         0:09.1  +27~44   2.1  12.0  Peg  H15-4 vF interacting pair
+NGC   23   Galaxy         0:09.9  +25~55   2.3  12.0  Peg  H147-3
+NGC   24   Galaxy         0:09.9  -24~58   5.5  11.5  Scl  H461-3 Nearly edge-on
+NGC   29   Galaxy         0:10.8  +33~21   1.8  12.6  And  H853-2
+NGC   36   Galaxy         0:11.4  + 6~23   2.4  14.4  Psc  H456-3
+NGC   39   Galaxy         0:12.3  +31~03   1.1  13.5  And  H861-3
+NGC   40   Planetary neb  0:13.0  +72~32    .3  10.7  Cep  H58-4 "400"
+NGC   52   Galaxy         0:14.6  +18~33   2.4  13.3  Peg  H183-3
+NGC   57   Galaxy         0:15.4  +17~18   2.6  11.6  Psc  H241-2 = H243-2
+NGC   61A  Galaxy         0:16.5  - 6~14   1.1  14.7  Psc  H428-3
+NGC   68   Galaxy         0:18.3  +30~04   1.5  13.0  And  H16-5
+NGC   95   Galaxy         0:22.2  +10~30   1.9  12.6  Psc  H257-2 asym uneven arms
+\end{verbatim}
 \caption{Een klein deel van de Herschel catalogus}
 \end{figure}
 
@@ -287,7 +230,7 @@ naar ``AR 37 / H969-3'' kijken, heeft dit object een rechte klimming
 van} 11:32.5 \emph{of} 11h32,5m (11h32m30s) \emph{en een declinatie
 van} +74\textasciitilde{}32 \emph{of }$74^{o}32'$.
 
-\begin{figure}
+\begin{figure}[h]
 \noindent \begin{centering}
 \includegraphics[width=8cm]{herschel_small_telescope}
 \par\end{centering}
@@ -309,4 +252,5 @@ beweegt, zegt men ook wel dat het object in transitie is.
 \emph{Bereken hoeveel tijd een Siderische dag van 24 Siderische uren
 in Aardse uren duurt. (Hoe zit het: Draait de Aarde in een jaar een
 rondje extra of een rondje minder rond de Zon?)}
+
 \end{document}

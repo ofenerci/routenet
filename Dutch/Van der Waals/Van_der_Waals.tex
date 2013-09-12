@@ -1,38 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% A simple dot to overcome graphicx limitations
-\newcommand{\lyxdot}{.}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Van der Waals en Wilson}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -43,7 +18,7 @@ van de vloeistof- naar de gasfase. Deze module wordt vervolgd met
 de module ``Kosmische straling''.
 
 Van der Waals deed onderzoek aan de overgang van de gas- en de vloeistoffase.
-Wilson was als meteoroloog geïnteresseerd in weer. Hij onderzocht
+Wilson was als meteoroloog geÃ¯nteresseerd in weer. Hij onderzocht
 of hij wolken in een afgesloten kamer na kon maken. Tijdens dit onderzoek
 ontdekte hij dat kosmische straling in deze ``Wilsonkamer'' gedetecteerd
 werd.
@@ -51,23 +26,22 @@ werd.
 
 \section{Van der Waals}
 
-Van der Waals promoveerde op een proefschrift%
-\footnote{Het gasmodel van Van der Waals beschrijft de overgang van de vloeibare-
-naar de gasfase. De constanten geven de grootte-orde waarin dit gebeurt.
-Ze zijn niet zo nauwkeurig bepaald als bijvoorbeeld de lichtsnelheid.
-Verder is er nog veel onderzoek mogelijk op het gebied van de overgang
-van vloeistof naar vaste stof.%
-} genaamd: ``Over de continuïteit van den gas- en vloeistoftoestand''.
-Dit proefschrift uit 1871 was in het Nederlands geschreven. In 1910
-kreeg Van der Waals de Nobelprijs. In de tijd van Van der Waals was
-men het er niet over eens dat stoffen uit atomen en moleculen waren
-opgebouwd. De algemene gaswet $pV=nRT$ was wel bekend. Hierin geldt
-$p$ is de druk van het gas in {[}$\frac{\mathrm{N}}{m^{2}}${]},
-$V$ is het volume in {[}$\mathrm{m}^{3}${]}, $T$ is de temperatuur
-in {[}K{]}, $n$ is de hoeveelheid gas in {[}mol{]} en $R$ is de
-algemene gasconstante. 
+Van der Waals promoveerde op een proefschrift \footnote{Het gasmodel van
+Van der Waals beschrijft de overgang van de vloeibare- naar de gasfase.
+De constanten geven de grootte-orde waarin dit gebeurt. Ze zijn niet zo
+nauwkeurig bepaald als bijvoorbeeld de lichtsnelheid. Verder is er nog
+veel onderzoek mogelijk op het gebied van de overgang van vloeistof naar
+vaste stof.} genaamd: ``Over de continuÃ¯teit van den gas- en
+vloeistoftoestand''. Dit proefschrift uit 1871 was in het Nederlands
+geschreven. In 1910 kreeg Van der Waals de Nobelprijs. In de tijd van
+Van der Waals was men het er niet over eens dat stoffen uit atomen en
+moleculen waren opgebouwd. De algemene gaswet $pV=nRT$ was wel bekend.
+Hierin geldt $p$ is de druk van het gas in
+{[}$\frac{\mathrm{N}}{m^{2}}${]}, $V$ is het volume in
+{[}$\mathrm{m}^{3}${]}, $T$ is de temperatuur in {[}K{]}, $n$ is de
+hoeveelheid gas in {[}mol{]} en $R$ is de algemene gasconstante. 
 
-Van der Waals breidde deze wet uit met twee ideeën: De deeltjes in
+Van der Waals breidde deze wet uit met twee ideeÃ«n: De deeltjes in
 een gas namen een ruimte in en de deeltjes in een gas oefenen krachten
 op elkaar uit. De algemene gaswet is nu te herschrijven als: 
 \begin{equation}
@@ -90,11 +64,13 @@ de eigenlijke Van der Waals kracht. Later heeft deze term in de scheikunde
 een bredere lading gekregen. Verder moet het volume van de gasmoleculen
 van het samendrukbaar volume van het gas worden afgetrokken.
 
-Experimenteel is voor water te bepalen dat $a=0.55[\frac{\mathrm{N}\mathrm{m}^{4}}{\mathrm{mo}\mathrm{l}^{2}}]$
-en $b=30,4*10^{-6}[\frac{\mathrm{m}^{3}}{\mathrm{mol}}]$. 
+Experimenteel is voor water te bepalen dat
+$a=0.55[\frac{\mathrm{N}\mathrm{m}^{4}}{\mathrm{mo}\mathrm{l}^{2}}]$ en
+$b=30,4*10^{-6}[\frac{\mathrm{m}^{3}}{\mathrm{mol}}]$. 
 
 \begin{figure}[h]
-\includegraphics[scale=0.75]{vdwaals0}
+\centering
+\includegraphics[scale=1]{vdwaals0}
 
 \caption{De afhankelijkheid van druk en volume bij verschillende temperaturen}
 \end{figure}
@@ -104,40 +80,37 @@ Zoals te zien is, wordt de functie voor een beperkte verzameling temperaturen
 niet meer monotoon dalend. De slingering in de grafiek heeft te maken
 met de faseverandering van vloeistof naar damp. 
 
-Boven een bepaalde temperatuur wordt de functie wel monotoon dalend.
-Hoe hoger de temperatuur boven de kritische temperatuur komt, hoe
-meer het gas op een ideaal gas gaat lijken%
-\footnote{Men spreekt van een ideaal gas als de toestanden te berekenen zijn
-met de algemene gaswet.%
-}. Boven deze kritische temperatuur vindt dan ook geen faseverandering
-plaats. Over het algemeen spreekt men dan over een (niet ideaal) gas.
-Bij temperaturen onder de kritische temperatuur vindt een faseovergang
+Boven een bepaalde temperatuur wordt de functie wel monotoon dalend. Hoe
+hoger de temperatuur boven de kritische temperatuur komt, hoe meer het
+gas op een ideaal gas gaat lijken \footnote{Men spreekt van een ideaal
+gas als de toestanden te berekenen zijn met de algemene gaswet.}. Boven
+deze kritische temperatuur vindt dan ook geen faseverandering plaats.
+Over het algemeen spreekt men dan over een (niet ideaal) gas. Bij
+temperaturen onder de kritische temperatuur vindt een faseovergang
 plaats en spreekt men over een damp- of een vloeistoffase. 
 
-Deze faseverandering onder de kritische temperatuur is te vinden met
-de regel van Maxwell. Volgens deze regel is er een verzadigingsdruk.
-Deze is te vinden door een lijn met de verzadigingsdruk te nemen zodat
-het gesloten oppervlak boven de grafiek hetzelfde is als het gesloten
-oppervlak onder de grafiek (donker aangegeven). In dit gebied komen
-er dus naast elkaar een vloeistof- en een dampfase voor%
-\footnote{Met de hefboomregel is de massa van de vloeistof te bepalen in de
+Deze faseverandering onder de kritische temperatuur is te vinden met de
+regel van Maxwell. Volgens deze regel is er een verzadigingsdruk. Deze
+is te vinden door een lijn met de verzadigingsdruk te nemen zodat het
+gesloten oppervlak boven de grafiek hetzelfde is als het gesloten
+oppervlak onder de grafiek (donker aangegeven). In dit gebied komen er
+dus naast elkaar een vloeistof- en een dampfase voor \footnote{Met de
+hefboomregel is de massa van de vloeistof te bepalen in de
 evenwichtstoestand. De lijn tussen de vloeistoffase en de dampfase
-scharniert als het ware om het punt (volume, verzadigingsdruk). De
-massa van de vloeistof maal de arm naar de vloeistoffase is gelijk
-aan de massa van de damp maal de arm naar de dampfase.%
-}. 
+scharniert als het ware om het punt (volume, verzadigingsdruk). De massa
+van de vloeistof maal de arm naar de vloeistoffase is gelijk aan de
+massa van de damp maal de arm naar de dampfase.}. 
 
-Bij expansie van een vloeistof dalen we uit de vloeistoffase (links
-in de grafiek) totdat de verzadigingsdruk is bereikt. Voor snelle
-expansies in een zuivere vloeistof kan men onder de verzadigingsdruk
-komen. We spreken dan van een oververhitte vloeistof. Als er dan een
-deeltje door de vloeistof vliegt, zal dit deeltje een spoor dampbelletjes
-maken. We hebben een bellenkamer. Is de vloeistof niet zuiver, dan
-ontstaan er belletjes op de verontreining (stofjes)%
-\footnote{Bij scheikunde voegt men daarom bij het verwarmen kooksteentjes (een
-soort verontreiniging) aan een oplossing in een reageerbuis toe. Het
-kookproces verloopt dan geleidelijker.%
-}. 
+Bij expansie van een vloeistof dalen we uit de vloeistoffase (links in
+de grafiek) totdat de verzadigingsdruk is bereikt. Voor snelle expansies
+in een zuivere vloeistof kan men onder de verzadigingsdruk komen. We
+spreken dan van een oververhitte vloeistof. Als er dan een deeltje door
+de vloeistof vliegt, zal dit deeltje een spoor dampbelletjes maken. We
+hebben een bellenkamer. Is de vloeistof niet zuiver, dan ontstaan er
+belletjes op de verontreining (stofjes) \footnote{Bij scheikunde voegt
+men daarom bij het verwarmen kooksteentjes (een soort verontreiniging)
+aan een oplossing in een reageerbuis toe. Het kookproces verloopt dan
+geleidelijker.}. 
 
 Bij langzame compressie stijgt de druk tot de verzadigingsdruk. In
 een zuivere stofvrije omgeving kunnen we boven de verzadigingsdruk
@@ -181,20 +154,17 @@ mist.
 In 1912 ontdekte Wilson dat geladen deeltjes sporen in de mist vormden
 bij een volumetoename met een factor 1,31.
 
-Een verbeterde versie van de nevelkamer werd gemaakt door Takeo Shimizu%
-\footnote{Shimizu is een veelvoorkomende Japanse naam en is toevallig te vertalen
-als 'zuiver water'.%
-} in 1921 op het Cavendish laboratorium. Shimizu bouwde een oscillerende
-nevelkamer met een diameter van ongeveer 6cm. De zuiger wordt hier
-mechanisch op en neer bewogen. Dit kan met frequenties in de buurt
-van 3Hz. Bij iedere expansie (volumetoename) is er nevel te zien.
-We kunnen met deze nevelkamer dus waarnemingen met een frequentie
-van 3Hz doen%
-\footnote{Het is wellicht mogelijk om een dergelijke nevelkamer uit aangepaste
-bromfietsonderdelen en een electromotor samen te stellen. Het bouwen
-van een dergelijke nevelkamer lijkt mij een goed onderwerp voor een
-profielwerkstuk.%
-}.
+Een verbeterde versie van de nevelkamer werd gemaakt door Takeo Shimizu
+\footnote{Shimizu is een veelvoorkomende Japanse naam en is toevallig te
+vertalen als 'zuiver water'.} in 1921 op het Cavendish laboratorium.
+Shimizu bouwde een oscillerende nevelkamer met een diameter van ongeveer
+6cm. De zuiger wordt hier mechanisch op en neer bewogen. Dit kan met
+frequenties in de buurt van 3Hz. Bij iedere expansie (volumetoename) is
+er nevel te zien. We kunnen met deze nevelkamer dus waarnemingen met een
+frequentie van 3Hz doen \footnote{Het is wellicht mogelijk om een
+dergelijke nevelkamer uit aangepaste bromfietsonderdelen en een
+electromotor samen te stellen. Het bouwen van een dergelijke nevelkamer
+lijkt mij een goed onderwerp voor een profielwerkstuk.}.
 
 
 \paragraph*{Opdracht 2:}
@@ -220,14 +190,14 @@ Hierna wordt dit voor de volledigheid afgeleid.
 
 Een warmtestroom is te beschouwen als een overdracht van energie van
 het ene naar het andere systeem. Als een gas door middel van een zuiger
-wordt geëxpandeerd, verricht de kracht van het gas arbeid op de zuiger.
+wordt geÃ«xpandeerd, verricht de kracht van het gas arbeid op de zuiger.
 Omdat arbeid ook een verandering van energie is, neemt de inwendige
 energie en daarmee de temperatuur van het gas af. 
 
 De inwendige energie van een ideaal gas wordt gevormd door het verplaatsen,
 draaien en eventueel het trillen van de gasmoleculen.
 
-Een éénatomig gasmolecuul kan vrij bewegen en heeft daarmee drie vrijheidsgraden.
+Een Ã©Ã©natomig gasmolecuul kan vrij bewegen en heeft daarmee drie vrijheidsgraden.
 \begin{itemize}
 \item De plaats: x, y en z. 
 \end{itemize}
@@ -237,7 +207,7 @@ moleculen hebben ook een richting, dit geeft twee nieuwe vrijheidsgraden.
 \item De hoek, deze geeft een hoek in het (x,y)-vlak en een hoek ten opzicht
 van de z-as.
 \end{itemize}
-Er zijn voor een tweeatomig gas dus een aantal mogelijke energiën:
+Er zijn voor een tweeatomig gas dus een aantal mogelijke energiÃ«n:
 \begin{itemize}
 \item Drie vrijheidsgraden voor de plaats, ieder met hun eigen bewegingsenergie.
 \item Twee vrijheidsgraden voor de hoek, ook met hun eigen bewegingsenergie.
@@ -267,7 +237,9 @@ V=\frac{c_{2}T}{p}
 Substitutie geeft:
 
 \begin{equation}
-p\left(\frac{c_{2}T}{p}\right)^{\frac{7}{5}}=c_{1}\Rightarrow\frac{T^{\frac{7}{5}}}{p^{\frac{2}{5}}}=\frac{c_{1}}{c_{2}}=\frac{1}{c}\Rightarrow p^{2}=cT^{7}
+p\left(\frac{c_{2}T}{p}\right)^{\frac{7}{5}}=c_{1}
+\Rightarrow\frac{T^{\frac{7}{5}}}{p^{\frac{2}{5}}}=\frac{c_{1}}{c_{2}}=\frac{1}{c}
+\Rightarrow p^{2}=cT^{7}
 \end{equation}
 
 
@@ -278,9 +250,7 @@ Een van der Waals gas heeft een fase verandering als we onder de kritische
 tempera\-tuur blijven. De tempera\-tuur waarbij deze faseverandering
 optreedt, wordt het dauwpunt genoemd. De druk waarbij deze faseverandering
 optreedt wordt de verzadigingsdruk genoemd. De verzadigingsdruk boven
-water is te benaderen met%
-\footnote{http://home.kpn.nl/vanadovv/Meteo.html%
-}:
+water is te benaderen met \footnote{http://home.kpn.nl/vanadovv/Meteo.html}:
 
 \begin{equation}
 p_{verz.}=610.78e^{\frac{17,26t}{t+237,3}}
@@ -315,7 +285,7 @@ De relatieve vochtigheid is dan 100\%. Onder deze temperatuur zal
 het gas in eerste instantie langs de lijn van de adiabatische expansie
 afkoelen. Helaas is de relatieve luchtvochtigheid dan meer dan 100\%
 en is de damp oververzadigd. Op onregelmatigheden in de damp zal nu
-condensatie optreden. Met wat geluk zijn er sporen van geïoniseerde
+condensatie optreden. Met wat geluk zijn er sporen van geÃ¯oniseerde
 lucht te zien. De gecondenseerde massa gedeeld door de massa bij $\mathrm{7^{o}C}$
 is te vinden door $\triangle p(7)$ (tussen $C$ en $D$) te delen
 door $p(7)$ (de hoogte tot $C$). 
@@ -327,4 +297,5 @@ door $p(7)$ (de hoogte tot $C$).
 uit tweeatomige moleculen bestaat, moet expanderen. Volgens Wilson
 is de expansiefactor 1,31 om deeltjes waar te nemen. Welk drukverschil
 onstaat er dan?}
+
 \end{document}

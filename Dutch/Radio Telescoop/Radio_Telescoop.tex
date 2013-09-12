@@ -1,34 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Radiotelescopen}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -37,26 +16,26 @@ steeds groter wordt. Bijgevolg zijn de lichtstralen van melkwegstelsels
 die ver van ons af staan naar het rood verschoven. Extreem verre sterren
 hebben een extreme verschuiving. In het microgolf gebied (zeer korte
 radiostraling) kunnen we de kosmische achtergrondstraling van de Big
-Bang waarnemen. Deze straling is verdeeld als een zwarte straler%
-\footnote{Wilhelm Carl Werner Otto Fritz Franz Wien (1864-1928) onderzocht hoe
-de verdeling van de kleuren van het licht / golflengten van het licht
-was bij voorwerpen die warm worden gemaakt. Om de kleur van het voorwerp
-niet mee te laten tellen gebruikte hij zwarte voorwerpen. Als deze
-gloeiend heet wordt geven ze dus wel licht. Als je er echter licht
-licht op laat vallen wordt al het licht geabsorbeerd. In de praktijk
-kun je een zwarte straler goed maken door een gaatje in een blok te
-boren. Het gat kun je als zwarte straler zien. Al het licht wordt
-door het zwarte gat geabsorbeerd. Het is wel handig om de wanden van
-het gat zwart te maken met bijvoorbeeld roet van een kaars. Koude
-voorwerpen stralen alleen (ver) infrarood licht uit.%
-} met een maximum bij een golflengte van 6cm.
+Bang waarnemen. Deze straling is verdeeld als een zwarte straler
+\footnote{Wilhelm Carl Werner Otto Fritz Franz Wien (1864-1928)
+onderzocht hoe de verdeling van de kleuren van het licht / golflengten
+van het licht was bij voorwerpen die warm worden gemaakt. Om de kleur
+van het voorwerp niet mee te laten tellen gebruikte hij zwarte
+voorwerpen. Als deze gloeiend heet wordt geven ze dus wel licht. Als je
+er echter licht licht op laat vallen wordt al het licht geabsorbeerd. In
+de praktijk kun je een zwarte straler goed maken door een gaatje in een
+blok te boren. Het gat kun je als zwarte straler zien. Al het licht
+wordt door het zwarte gat geabsorbeerd. Het is wel handig om de wanden
+van het gat zwart te maken met bijvoorbeeld roet van een kaars. Koude
+voorwerpen stralen alleen (ver) infrarood licht uit.} met een maximum
+bij een golflengte van 6cm.
 
 
 \section{De opstelling}
 
 \begin{figure}[h]
 \noindent \begin{centering}
-\includegraphics[width=10cm]{Westerbork_Radio_Telescoop.jpg}
+\includegraphics[width=10cm]{Westerbork_Radio_Telescoop}
 \par\end{centering}
 
 \caption{Schotels in Westerbork}
@@ -91,7 +70,7 @@ gelijktijdige signalen van de schotels ook gelijktijdig in het meetcentrum
 moeten komen. Het radiosignaal gaat bij benadering met de lichtsnelheid
 door de atmosfeer. Helaas gaat het signaal ongeveer 1,5 maal zo langzaam
 door een coaxkabel. De kabels moeten dus precies evenlang zijn voor
-iedere schotel. Verder is het noodzakelijk om één soort kabels te
+iedere schotel. Verder is het noodzakelijk om Ã©Ã©n soort kabels te
 gebruiken. Als we de signaalsterkte van het signaal van de schotels
 kunnen meten hebben we al een soort radiotelescoop.
 
@@ -104,11 +83,11 @@ en hoe je deze kunt bouwen.}
 
 \section{De resolutie van een radiotelescoop}
 
-Volgens de module ``Telescopen'' kunnen we de resolutie van één
+Volgens de module ``Telescopen'' kunnen we de resolutie van Ã©Ã©n
 schotel vinden met:
 
 \begin{equation}
-sin(\alpha)\thickapprox tan(\alpha)\approx\frac{\lambda}{Diameter}
+\sin(\alpha)\approx \tan(\alpha)\approx\frac{\lambda}{Diameter}
 \end{equation}
 
 
@@ -116,7 +95,7 @@ Voor een golflengte van 2,5cm en een schoteldiameter van 50cm komen
 we op een hoek van:
 
 \begin{equation}
-sin(\alpha)\thickapprox tan(\alpha)\approx\frac{\mathrm{2,5cm}}{50\mathrm{cm}}=0,050
+\sin(\alpha)\approx \tan(\alpha)\approx\frac{\mathrm{2,5cm}}{50\mathrm{cm}}=0,050
 \end{equation}
 
 
@@ -223,22 +202,21 @@ Om een interferentie radiotelescoop te bouwen, hebben we de volgende
 onderdelen nodig:
 \begin{itemize}
 \item Een of meerdere schotels.
-\item Evenveel LNB%
-\footnote{Een LNB werkt als heterodyne ontvanger voor satellietsignalen. In
-een heterodyne ontvanger wordt het antennesignaal vermenigvuldigd
-met een middenfrequent signaal. De frequentie van dit signaal ligt
-iets boven de helft van de frequentie van het antennesignaal. Door
-deze vermenigvuldiging onstaat er een verzameling van signalen met
-verschillende frequenties. Met een filter kunnen we de frequenties
-voor de UHF (ultra high frequency) en VHF (very high frequency) band
-uit deze verzameling halen. Als dit signaal op een TV wordt aangesloten
-kunnen we TV-kijken. Omdat de fase van het antennesignaal en de fase
-van het middenfrequentsignaal beide belangrijk zijn voor de fase van
-het uitgaand signaal, moeten verschillende schotels in een array eenzelfde
-middensignaal krijgen. In het ideale geval is er één middenfrequente
-bron voor alle schotels van de opstelling.%
-}'s of Low noise block converters. Deze werken als antenne en zetten
-het 12GHz signaal om in een laagfrequenter signaal.
+\item Evenveel LNB \footnote{Een LNB werkt als heterodyne ontvanger voor
+satellietsignalen. In een heterodyne ontvanger wordt het antennesignaal
+vermenigvuldigd met een middenfrequent signaal. De frequentie van dit
+signaal ligt iets boven de helft van de frequentie van het
+antennesignaal. Door deze vermenigvuldiging onstaat er een verzameling
+van signalen met verschillende frequenties. Met een filter kunnen we de
+frequenties voor de UHF (ultra high frequency) en VHF (very high
+frequency) band uit deze verzameling halen. Als dit signaal op een TV
+wordt aangesloten kunnen we TV-kijken. Omdat de fase van het
+antennesignaal en de fase van het middenfrequentsignaal beide belangrijk
+zijn voor de fase van het uitgaand signaal, moeten verschillende
+schotels in een array eenzelfde middensignaal krijgen. In het ideale
+geval is er Ã©Ã©n middenfrequente bron voor alle schotels van de
+opstelling.}'s of Low noise block converters. Deze werken als antenne en
+zetten het 12GHz signaal om in een laagfrequenter signaal.
 \item Een satellietzoeker, hiermee is de sterkte van het signaal te meten.
 \item Coaxkabel en kabelsplitters.
 \end{itemize}
@@ -264,4 +242,5 @@ Tot slot kunnen we via een kabelsplitter een derde schotel toevoegen.
 De totale kabellengte, inclusief de lengte van eventuele kabelsplitters
 in de kabel, van iedere schotel tot de satellietzoeker moet even groot
 zijn. 
+
 \end{document}

@@ -1,33 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{float}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Deeltjes in Airshowers}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -74,21 +54,20 @@ Uitwerken geeft:
 \emph{Bereken je eigen golflengte en de golflengte van een H-atoom.
 Waar kun je het nauwkeurigst mee meten?}
 
-Boven in de atmosfeer worden regelmatig deeltjes met energieniveaus
-in de orde van GeV%
-\footnote{1eV is de energie die 1 elektron krijgt als het een spanningsverschil
-van 1V doorloopt. Aangezien de lading van 1 elektron ongeveer $1.6*10^{-19}\mathrm{C}$
-is, geldt $1\mathrm{eV}\approx1.6*10^{-19}\mathrm{J}$.%
-} en zelfs TeV en hoger waargenomen.
+Boven in de atmosfeer worden regelmatig deeltjes met energieniveaus in
+de orde van GeV \footnote{1eV is de energie die 1 elektron krijgt als
+het een spanningsverschil van 1V doorloopt. Aangezien de lading van 1
+elektron ongeveer $1.6*10^{-19}\mathrm{C}$ is, geldt
+$1\mathrm{eV}\approx1.6*10^{-19}\mathrm{J}$.} en zelfs TeV en hoger
+waargenomen.
 
 
 \paragraph*{Opdracht 2:}
 
-\emph{In de Large Hadron Collider hoopt men protonen met een energie
-van 7TeV te maken. Vergelijk deze golflengte met de diameter van protonen
-in rust en quarks}%
-\footnote{De grootte van een proton en een quark zijn op internet te vinden.%
-}\emph{. Wat is je conclusie?}
+\emph{In de Large Hadron Collider hoopt men protonen met een energie van
+7TeV te maken. Vergelijk deze golflengte met de diameter van protonen in
+rust en quarks} \footnote{De grootte van een proton en een quark zijn op
+internet te vinden.}\emph{. Wat is je conclusie?}
 
 
 \subsection{Kan kosmische straling worden gesimuleerd in een laboratorium?}
@@ -173,7 +152,8 @@ waarnemer wordt waargenomen.
 Voor iedere waarnemer in ieder assenstelsel geldt:
 
 \begin{equation}
-\left(\sum m_{i}^{2}\right)c^{4}=\left(\sum E_{i}\right)^{2}+\left(\sum p_{i}\right)^{2}c^{2}
+\left(\sum m_{i}^{2}\right)c^{4}
+=\left(\sum E_{i}\right)^{2}+\left(\sum p_{i}\right)^{2}c^{2}
 \end{equation}
 
 
@@ -202,11 +182,12 @@ Formule (2.10) wordt:
 \end{equation}
 
 
-Omdat de massa volgens de botsingscentrale waarnemer en de laboratoriumwaarnemer
-hetzelfde is, krijgen we nu:
+Omdat de massa volgens de botsingscentrale waarnemer en de
+laboratoriumwaarnemer hetzelfde is, krijgen we nu:
 
 \begin{equation}
-\left(\sum E'_{i}\right)^{2}=\left(\sum E_{i}\right)^{2}+\left(\sum p_{i}\right)^{2}c^{2}
+\left(\sum E'_{i}\right)^{2}
+=\left(\sum E_{i}\right)^{2}+\left(\sum p_{i}\right)^{2}c^{2}
 \end{equation}
 
 
@@ -226,7 +207,8 @@ Hierin is $E_{b}$ de rustmassa / energie van het proton in de atmosfeer
 en $p_{b}$ de impuls. Invullen geeft:
 
 \begin{equation}
-\left(14\mathrm{TeV}\right)^{2}=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}+p_{a}^{2}c^{2}
+\left(14\mathrm{TeV}\right)^{2}
+=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}+p_{a}^{2}c^{2}
 \end{equation}
 
 
@@ -262,7 +244,8 @@ p=\beta\frac{E}{c}
 Substitutie geeft:
 
 \begin{equation}
-\left(14\mathrm{TeV}\right)^{2}=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}+\left(\beta\frac{E_{a}}{c}\right)^{2}c^{2}
+\left(14\mathrm{TeV}\right)^{2}
+=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}+\left(\beta\frac{E_{a}}{c}\right)^{2}c^{2}
 \end{equation}
 
 
@@ -270,22 +253,29 @@ Omdat de waarnemer tegen het deeltje in reist, geldt volgens formule
 2.8 bij benadering $\beta\approx-1$:
 
 \begin{equation}
-\left(14\mathrm{TeV}\right)^{2}=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}-\left(\frac{E_{a}}{c}\right)^{2}c^{2}\Longleftrightarrow
+\left(14\mathrm{TeV}\right)^{2}
+=\left(E_{a}+938.3\mathrm{MeV}\right)^{2}-\left(\frac{E_{a}}{c}\right)^{2}c^{2}
+\Longleftrightarrow
 \end{equation}
 
 
 \begin{equation}
-\left(14\mathrm{TeV}\right)^{2}=E_{a}^{2}+2*E_{a}*938.3\mathrm{MeV}+\left(938.3\mathrm{MeV}\right)^{2}-E_{a}^{2}\Longleftrightarrow
+\left(14\mathrm{TeV}\right)^{2}
+=E_{a}^{2}+2*E_{a}*938.3\mathrm{MeV}+\left(938.3\mathrm{MeV}\right)^{2}-E_{a}^{2}
+\Longleftrightarrow
 \end{equation}
 
 
 \begin{equation}
-\left(14\mathrm{TeV}\right)^{2}=2*E_{a}*938.3\mathrm{MeV}+\left(938.3\mathrm{MeV}\right)^{2}\Longleftrightarrow
+\left(14\mathrm{TeV}\right)^{2}
+=2*E_{a}*938.3\mathrm{MeV}+\left(938.3\mathrm{MeV}\right)^{2}
+\Longleftrightarrow
 \end{equation}
 
 
 \begin{equation}
-E_{a}=\frac{\left(14\mathrm{TeV}\right)^{2}-\left(938.3\mathrm{MeV}\right)^{2}}{2*938.3\mathrm{MeV}}=1.0*10^{17}\mathrm{eV}
+E_{a}=\frac{\left(14\mathrm{TeV}\right)^{2}-\left(938.3\mathrm{MeV}\right)^{2}}{2*938.3\mathrm{MeV}}
+=1.0*10^{17}\mathrm{eV}
 \end{equation}
 
 
@@ -376,4 +366,5 @@ ten dele compenseren.
 
 We meten de hoeveelheid kosmische straling op de bodem. Er is dus
 een hoogte in de atmosfeer waar meer kosmische straling wordt waargenomen.
+
 \end{document}

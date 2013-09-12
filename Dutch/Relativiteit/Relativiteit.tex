@@ -1,40 +1,13 @@
-%% LyX 2.0.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[oneside,dutch]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\graphicspath{{Figures/}}
+\input{../style}
 
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% Because html converters don't know tabularnewline
-\providecommand{\tabularnewline}{\\}
-%% A simple dot to overcome graphicx limitations
-\newcommand{\lyxdot}{.}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-
-\makeatother
-
-\usepackage{babel}
 \begin{document}
 
 \title{Relativiteit}
-
-
 \author{N.G. Schultheiss}
+\date{}
 
 \maketitle
+\thispagestyle{firststyle}
 
 \section{Inleiding}
 
@@ -54,18 +27,18 @@ Bestudeer de afleidingen goed, zodat je begrijpt hoe het maken van
 een afleiding gaat.
 
 
-\section{Lorentz en Poincaré}
+\section{Lorentz en PoincarÃ©}
 
-Hendrik Antoon Lorentz is samen met Pieter Zeeman één van de vele
+Hendrik Antoon Lorentz is samen met Pieter Zeeman Ã©Ã©n van de vele
 nederlandse Nobelprijswinnaars voor na\-tuur\-kunde. Je kent hem
 onder andere van de Lorentzkracht $\mathbf{F}_{L}=l(\mathbf{I}\times\mathbf{B})$
-of $F_{L}=BIlsin(\alpha)$. De Nobelprijs kreeg hij echter samen met
+of $F_{L}=BIl\sin(\alpha)$. De Nobelprijs kreeg hij echter samen met
 Zeeman voor het Zeeman-effect. Het Zeeman-effect beschrijft het effect
 van magneten op de spin van deeltjes, hier komen we nog op terug.
 
 Daarna wijdde Lorentz zich aan een eerste opzet van een relativiteitstheorie.
 Voordat deze Lorentz transformatie werd toegepast, gebruikte men de
-transformatie van Galileï om van een assenstelsel naar een assenstelsel'
+transformatie van GalileÃ¯ om van een assenstelsel naar een assenstelsel'
 te gaan:
 
 \begin{equation}
@@ -78,28 +51,26 @@ t=t'
 \end{equation}
 
 
-De grootheden zonder accent worden waargenomen door een waarnemer
-in het assenstelsel zonder accent. De grootheden' met een accent worden
-waargenomen door een waarnemer' in het assenstelsel' met accent%
-\footnote{In de wiskunde wordt een accent ook wel gebruikt om de afgeleidde
-van een functie aan te geven. Hier heeft dat niet zoveel zin, omdat
-we dan niet weten of we de afgeleidde naar de tijd $t$ of de plaats
-$(x,y,z)$ bedoelen. Om verwarring te voorkomen kunnen we bijvoorbeeld
-de afgeleidde naar de tijd van de de functie $f(x,y,z,t)$ beter schrijven
-als $\frac{df(x,y,z,t)}{dt}$.%
-}.
+De grootheden zonder accent worden waargenomen door een waarnemer in het
+assenstelsel zonder accent. De grootheden' met een accent worden
+waargenomen door een waarnemer' in het assenstelsel' met accent
+\footnote{In de wiskunde wordt een accent ook wel gebruikt om de
+afgeleidde van een functie aan te geven. Hier heeft dat niet zoveel zin,
+omdat we dan niet weten of we de afgeleidde naar de tijd $t$ of de
+plaats $(x,y,z)$ bedoelen. Om verwarring te voorkomen kunnen we
+bijvoorbeeld de afgeleidde naar de tijd van de de functie $f(x,y,z,t)$
+beter schrijven als $\frac{df(x,y,z,t)}{dt}$.}.
 
-Zoals je ziet verandert alleen het x-coördinaat. Galileï ging ervan
-uit dat de tijd hetzelfde bleef voor alle assenstelsels. Volgens het
-experiment van Michelson en Morley is de lichtsnelheid in alle assenstelsels
-hetzelfde. De transformatie van een waarnemer naar een andere waarnemer
-gaat dus niet meer volgens het paradigma van Galileï%
-\footnote{Een paradigma is een idee dat de mensheid van de wereld heeft. Soms
-blijkt dat dit idee niet juist is, dit noemt men een anomalie. Het
+Zoals je ziet verandert alleen het x-coÃ¶rdinaat. GalileÃ¯ ging ervan uit
+dat de tijd hetzelfde bleef voor alle assenstelsels. Volgens het
+experiment van Michelson en Morley is de lichtsnelheid in alle
+assenstelsels hetzelfde. De transformatie van een waarnemer naar een
+andere waarnemer gaat dus niet meer volgens het paradigma van GalileÃ¯
+\footnote{Een paradigma is een idee dat de mensheid van de wereld heeft.
+Soms blijkt dat dit idee niet juist is, dit noemt men een anomalie. Het
 experiment van Michelson en Morley is dus te beschouwen als een anamolie
-volgens het paradigma van Galileï.%
-}. Het uitgangspunt wordt dus dat de lichtsnelheid langs de positieve
-x-as in twee assenstelsels constant is:
+volgens het paradigma van GalileÃ¯.}. Het uitgangspunt wordt dus dat de
+lichtsnelheid langs de positieve x-as in twee assenstelsels constant is:
 
 \begin{equation}
 \begin{array}{c}
@@ -335,7 +306,7 @@ t'=\frac{t-\frac{v}{c^{2}}x}{\sqrt{1-\left(\frac{v}{c}\right)^{2}}}
 \end{equation}
 
 
-De verandering van de plaats verschilt van de Galileï transformaties.
+De verandering van de plaats verschilt van de GalileÃ¯ transformaties.
 De verandering is als een nieuwe constante te schrijven, de Lorentzconstante:
 
 \begin{equation}
@@ -343,32 +314,31 @@ De verandering is als een nieuwe constante te schrijven, de Lorentzconstante:
 \end{equation}
 
 
-Lorentz hing het idee van ``aether'' aan en had zelf moeite om de
-door hem afgeleidde formules te aanvaarden. In een briefwisseling
-met Lorentz opperde Jules Henri Poincaré verder het idee dat de ruimte
-als vierdimensionaal voor te stellen is. De Lorentztransformaties
-beschrijven hoe deze vierdimensionale ruimte wordt vervormd als men
-deze vanuit het stelsel van ene waarnemer en vanuit het stelsel van
-de andere waarnemer' bekijkt. Als men de tijd imaginair%
-\footnote{Meestal wordt een imaginair getal aangeduidt met $i$. Dit is ook
-te definiëren met $i=\sqrt{-1}$.%
-} neemt, blijft de lengte van de vectoren in deze vierdimensionale
-ruimte gelijk en is te schrijven met:
+Lorentz hing het idee van ``aether'' aan en had zelf moeite om de door
+hem afgeleidde formules te aanvaarden. In een briefwisseling met Lorentz
+opperde Jules Henri PoincarÃ© verder het idee dat de ruimte als
+vierdimensionaal voor te stellen is. De Lorentztransformaties
+beschrijven hoe deze vierdimensionale ruimte wordt vervormd als men deze
+vanuit het stelsel van ene waarnemer en vanuit het stelsel van de andere
+waarnemer' bekijkt. Als men de tijd imaginair \footnote{Meestal wordt
+een imaginair getal aangeduidt met $i$. Dit is ook te definiÃ«ren met
+$i=\sqrt{-1}$.} neemt, blijft de lengte van de vectoren in deze
+vierdimensionale ruimte gelijk en is te schrijven met:
 
 \begin{equation}
 x^{2}+y^{2}+z^{2}-\left(ct\right)^{2}=x'^{2}+y'^{2}+z'^{2}-\left(ct'\right)^{2}
 \end{equation}
 
 
-Poincaré werkte ook aan de effecten van de terugstoot van bijvoorbeeld
+PoincarÃ© werkte ook aan de effecten van de terugstoot van bijvoorbeeld
 de door Madame Curie gevonden straling. Voor de publicatie van Einstein
-betreffende de speciale relativiteitstheorie publiceerde hij: 'Poincaré,
-H. (1905), Sur la dynamique de l'électron'. In 1906 schreef hij een
-tweede artikel met dezelfde titel%
-\footnote{Beiden zijn op internet te vinden. Ik behandel de besproken wiskunde
-hier niet. Het is inderdaad heel veel werk en het heeft weinig resultaat.%
-}. Hierna stopte Poincaré (helaas) met de vierdimensionale ruimte omdat
-hij het te veel werk met te weinig resultaat vond.
+betreffende de speciale relativiteitstheorie publiceerde hij: 'PoincarÃ©,
+H. (1905), Sur la dynamique de l'Ã©lectron'. In 1906 schreef hij een
+tweede artikel met dezelfde titel \footnote{Beiden zijn op internet te
+vinden. Ik behandel de besproken wiskunde hier niet. Het is inderdaad
+heel veel werk en het heeft weinig resultaat.}. Hierna stopte PoincarÃ©
+(helaas) met de vierdimensionale ruimte omdat hij het te veel werk met
+te weinig resultaat vond.
 
 
 \section{\label{sec:Invarianten}Invarianten}
@@ -383,7 +353,7 @@ de plaatsvector en de tijd. Omdat alles relatief is, zijn de plaatsvector
 en de tijd dit natuurlijk ook. Een andere manier, die ook direct voor
 botsingen te gebruiken is, is een beschrijving met impuls en energie.
 Zowel de impuls als de plaats kennen 3 richtingen: \emph{x}, \emph{y}
-en \emph{z}. De tijd is volgens Poincaré en Minkowsky (in het geval
+en \emph{z}. De tijd is volgens PoincarÃ© en Minkowsky (in het geval
 van de plaats) op te vatten als een $4^{e}$ richting. In het geval
 van de impuls geldt dit ook voor de energie.
 
@@ -402,15 +372,15 @@ p_{z'}=p_{z}\\
 \end{equation}
 
 
-In deze set formules zien we de variabelen $\beta$ en $\gamma$.
-De variabele $\beta$ geeft aan hoe snel de assenstelsels ten opzichte
-van elkaar bewegen: $\beta=\frac{v}{c}$. Als we met deze formule
-terug willen naar het eerste assenstelsel nemen we $\beta$ negatief.
-De Lorentzconstante $\gamma$ is nu te schrijven als: $\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$%
-\footnote{Uiteraard geldt: $\beta^{2}=\left(-\beta\right)^{2}$. De transformatie
-van het ene naar het andere stelsel en terug is dus met dezelfde Lorentzconstante
-$\gamma$ te beschrijven.%
-}.
+In deze set formules zien we de variabelen $\beta$ en $\gamma$. De
+variabele $\beta$ geeft aan hoe snel de assenstelsels ten opzichte van
+elkaar bewegen: $\beta=\frac{v}{c}$. Als we met deze formule terug
+willen naar het eerste assenstelsel nemen we $\beta$ negatief. De
+Lorentzconstante $\gamma$ is nu te schrijven als:
+$\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$ \footnote{Uiteraard geldt:
+$\beta^{2}=\left(-\beta\right)^{2}$. De transformatie van het ene naar
+het andere stelsel en terug is dus met dezelfde Lorentzconstante
+$\gamma$ te beschrijven.}.
 
 De lengte van deze 4-vector is met de stelling van Pythagoras te bepalen.
 Als we de tijd- of de energie-component imaginair nemen, dan blijkt
@@ -418,7 +388,8 @@ deze vector ook invariant te zijn. Als men de tijd of de energie-component
 dan kwadradeert, wordt het resultaat negatief. Blijkbaar geldt dus:
 
 \begin{equation}
-p_{x'}^{2}+p_{y'}^{2}+p_{z'}^{2}-\left(\frac{E'}{c}\right)^{2}=p_{x}^{2}+p_{y}^{2}+p_{z}^{2}-\left(\frac{E}{c}\right)^{2}
+p_{x'}^{2}+p_{y'}^{2}+p_{z'}^{2}-\left(\frac{E'}{c}\right)^{2}
+=p_{x}^{2}+p_{y}^{2}+p_{z}^{2}-\left(\frac{E}{c}\right)^{2}
 \end{equation}
 
 
@@ -426,42 +397,50 @@ Dit is natuurlijk wiskundig te controleren. Substitutie van de formules
 van \ref{eq:e6.1} geeft de te bewijzen bewering:
 
 \begin{equation}
-\left(\gamma\left(p_{x}-\beta\frac{E}{c}\right)\right)^{2}+p_{y}^{2}+p_{z}^{2}-\left(\gamma\left(\frac{E}{c}-\beta p_{x}\right)\right)^{2}=p_{x}^{2}+p_{y}^{2}+p_{z}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\left(\gamma\left(p_{x}-\beta\frac{E}{c}\right)\right)^{2}+p_{y}^{2}+p_{z}^{2}-\left(\gamma\left(\frac{E}{c}-\beta p_{x}\right)\right)^{2}
+=p_{x}^{2}+p_{y}^{2}+p_{z}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\left(\gamma\left(p_{x}-\beta\frac{E}{c}\right)\right)^{2}-\left(\gamma\left(\frac{E}{c}-\beta p_{x}\right)\right)^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\left(\gamma\left(p_{x}-\beta\frac{E}{c}\right)\right)^{2}-\left(\gamma\left(\frac{E}{c}-\beta p_{x}\right)\right)^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\gamma^{2}\left(p_{x}^{2}-2p_{x}\beta\frac{E}{c}+\beta^{2}\left(\frac{E}{c}\right)^{2}\right)-\gamma^{2}\left(\left(\frac{E}{c}\right)^{2}-2p_{x}\beta\frac{E}{c}+\beta^{2}p_{x}^{2}\right)=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\gamma^{2}\left(p_{x}^{2}-2p_{x}\beta\frac{E}{c}+\beta^{2}\left(\frac{E}{c}\right)^{2}\right)-\gamma^{2}\left(\left(\frac{E}{c}\right)^{2}-2p_{x}\beta\frac{E}{c}+\beta^{2}p_{x}^{2}\right)
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\gamma^{2}p_{x}^{2}-2\gamma^{2}p_{x}\beta\frac{E}{c}+\gamma^{2}\beta^{2}\left(\frac{E}{c}\right)^{2}-\gamma^{2}\left(\frac{E}{c}\right)^{2}+2\gamma^{2}p_{x}\beta\frac{E}{c}-\gamma^{2}\beta^{2}p_{x}^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\gamma^{2}p_{x}^{2}-2\gamma^{2}p_{x}\beta\frac{E}{c}+\gamma^{2}\beta^{2}\left(\frac{E}{c}\right)^{2}-\gamma^{2}\left(\frac{E}{c}\right)^{2}+2\gamma^{2}p_{x}\beta\frac{E}{c}-\gamma^{2}\beta^{2}p_{x}^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\gamma^{2}p_{x}^{2}-\gamma^{2}\beta^{2}p_{x}^{2}-2\gamma^{2}p_{x}\beta\frac{E}{c}+2\gamma^{2}p_{x}\beta\frac{E}{c}+\gamma^{2}\beta^{2}\left(\frac{E}{c}\right)^{2}-\gamma^{2}\left(\frac{E}{c}\right)^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\gamma^{2}p_{x}^{2}-\gamma^{2}\beta^{2}p_{x}^{2}-2\gamma^{2}p_{x}\beta\frac{E}{c}+2\gamma^{2}p_{x}\beta\frac{E}{c}+\gamma^{2}\beta^{2}\left(\frac{E}{c}\right)^{2}-\gamma^{2}\left(\frac{E}{c}\right)^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\gamma^{2}\left(1-\beta^{2}\right)p_{x}^{2}+\gamma^{2}\left(\beta^{2}-1\right)\left(\frac{E}{c}\right)^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\gamma^{2}\left(1-\beta^{2}\right)p_{x}^{2}+\gamma^{2}\left(\beta^{2}-1\right)\left(\frac{E}{c}\right)^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-\frac{1-\beta^{2}}{1-\beta^{2}}p_{x}^{2}+\frac{\beta^{2}-1}{1-\beta^{2}}\left(\frac{E}{c}\right)^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
+\frac{1-\beta^{2}}{1-\beta^{2}}p_{x}^{2}+\frac{\beta^{2}-1}{1-\beta^{2}}\left(\frac{E}{c}\right)^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}\Rightarrow
 \end{equation}
 
 
 \begin{equation}
-p_{x}^{2}-\left(\frac{E}{c}\right)^{2}=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}
+p_{x}^{2}-\left(\frac{E}{c}\right)^{2}
+=p_{x}^{2}-\left(\frac{E}{c}\right)^{2}
 \end{equation}
 
 
@@ -473,7 +452,10 @@ zien we hoe Einstein afleidde dat als $p_{x}=\gamma mv$, $E=\gamma mc^{2}$
 wordt. Invullen geeft:
 
 \begin{equation}
-p_{x}^{2}-\left(\frac{E}{c}\right)^{2}=\left(m\gamma v\right)^{2}-\left(\frac{m\gamma c^{2}}{c}\right)^{2}=m^{2}c^{2}\gamma^{2}\left(\left(\frac{v}{c}\right)^{2}-1\right)=m^{2}c^{2}\frac{\beta^{2}-1}{1-\beta^{2}}
+p_{x}^{2}-\left(\frac{E}{c}\right)^{2}
+=\left(m\gamma v\right)^{2}-\left(\frac{m\gamma c^{2}}{c}\right)^{2}
+=m^{2}c^{2}\gamma^{2}\left(\left(\frac{v}{c}\right)^{2}-1\right)
+=m^{2}c^{2}\frac{\beta^{2}-1}{1-\beta^{2}}
 \end{equation}
 
 
@@ -483,16 +465,17 @@ m^{2}c^{2}=\left(\frac{E}{c}\right)^{2}-p^{2}\label{eq:e12}
 
 
 Met deze formule is ook direct de impuls van fotonen te bepalen. Omdat
-een foton geen (rust-)massa heeft, kan men afleiden dat $p_{foton}=\frac{E_{foton}}{c}$.
-Of volgens Planck: $p_{foton}=\frac{h\nu}{c}$.
+een foton geen (rust-)massa heeft, kan men afleiden dat
+$p_{foton}=\frac{E_{foton}}{c}$. Of volgens Planck:
+$p_{foton}=\frac{h\nu}{c}$.
 
-Verder valt op dat, als we onze eenheden zo nemen dat alles in lichtsnelheden
-en seconden wordt uitgedrukt%
-\footnote{Deze eenheden staan bekend als Natural Units (NU) en kunnen op verschillende
-wijzen worden gedefiniëerd. Met Heaviside-Lorentz Units wordt de lichtsnelheid
+Verder valt op dat, als we onze eenheden zo nemen dat alles in
+lichtsnelheden en seconden wordt uitgedrukt \footnote{Deze eenheden
+staan bekend als Natural Units (NU) en kunnen op verschillende wijzen
+worden gedefiniÃ«erd. Met Heaviside-Lorentz Units wordt de lichtsnelheid
 ook 1 omdat men $\varepsilon_{0}$ en $\mu_{0}$ op 1 stelt. Omdat
-$c^{2}=\frac{1}{\varepsilon_{0}\mu_{0}}$ is, wordt $c=1$.%
-}, formule \ref{eq:e12} kan worden geschreven als:
+$c^{2}=\frac{1}{\varepsilon_{0}\mu_{0}}$ is, wordt $c=1$.}, formule
+\ref{eq:e12} kan worden geschreven als:
 
 \begin{equation}
 m=\sqrt{E^{2}-p^{2}}
@@ -550,16 +533,14 @@ m_{doos}\frac{\Delta x_{doos}}{l}+\frac{E_{foton}}{c^{2}}=0\label{eq:e5}
 \end{equation}
 
 
-Als we weten hoever de doos zich verplaatst is de formule opgelost.
-We introduceren een nieuwe grootheid $m_{foton}$, omdat fotonen met
-de lichtsnelheid bewegen is deze impuls ook te schrijven als $m_{foton}c$.
-De wet van behoud van impuls blijft gelden%
-\footnote{Hier is iets vreemds aan de hand, het foton beweegt natuurlijk slechts
-over de lengte van de doos min de verplaatsing van de doos. Als we
-de massa van de doos heel groot ten opzichte van die van het foton
-nemen, mag deze verwaarlozing echter wel. Hoe zit het trouwens met
-$\Delta t$?%
-}:
+Als we weten hoever de doos zich verplaatst is de formule opgelost. We
+introduceren een nieuwe grootheid $m_{foton}$, omdat fotonen met de
+lichtsnelheid bewegen is deze impuls ook te schrijven als $m_{foton}c$.
+De wet van behoud van impuls blijft gelden \footnote{Hier is iets
+vreemds aan de hand, het foton beweegt natuurlijk slechts over de lengte
+van de doos min de verplaatsing van de doos. Als we de massa van de doos
+heel groot ten opzichte van die van het foton nemen, mag deze
+verwaarlozing echter wel. Hoe zit het trouwens met $\Delta t$?}:
 
 \begin{equation}
 m_{foton}c+m_{doos}v_{doos}=0
@@ -606,10 +587,9 @@ E=Mc^{2}=\alpha mc^{2}
 
 
 De waargenomen massa $M$ is dus een factor $\alpha$ groter dan de
-rustmassa $m$%
-\footnote{In de literatuur wordt voor de rustmassa ook vaak $m_{0}$ gebruikt.
-De massa wordt dan niet met $M$ maar met $m$ aangeduidt.%
-}. We kunnen nu ook de impuls van dit deeltje uitrekenen:
+rustmassa $m$ \footnote{In de literatuur wordt voor de rustmassa ook
+vaak $m_{0}$ gebruikt. De massa wordt dan niet met $M$ maar met $m$
+aangeduidt.}. We kunnen nu ook de impuls van dit deeltje uitrekenen:
 
 \begin{equation}
 p=Mv=\alpha mv
@@ -653,7 +633,7 @@ dus eigenlijk de e\-ner\-giever\-andering: $\Delta E=\frac{1}{2}mv^{2}$.
 In tabel 1 is te zien welke gevolgen dit voor verschillende snelheden
 heeft. Het valt op dat bij lage snelheden ten opzichte van de lichtsnelheid
 beide modellen dezelfde waarden geven. Dit is natuurlijk wel te verwachten.
-De klassieke natuurkunde die door mensen als Galileï, Huygens, Keppler
+De klassieke natuurkunde die door mensen als GalileÃ¯, Huygens, Keppler
 en Newton is vormgegeven, nam geen verschijnselen waar die in de buurt
 van de lichtsnelheid kwamen. Met de klassieke wetten zijn de verschijnselen
 die wel waargenomen werden goed te verklaren. Bij $0.1c$ is de afwijking
@@ -699,6 +679,7 @@ $1,0c$ & $\infty$ & $0,500mc^{2}$\tabularnewline
 
 
 \begin{figure}[h]
+\centering
 \includegraphics[scale=1]{einstein}
 
 \caption{De energie als functie van $c$ tegen de energie volgens Einstein
@@ -720,7 +701,7 @@ kunnen berekenen.
 
 Albert Einstein kreeg in Zurich wiskunde van Hermann Minkowski. Minkowski
 hield zich onder andere bezig met meerdimensionale wiskundige problemen.
-Minkowski werkte de ideeën die door Poincaré waren geopperd verder
+Minkowski werkte de ideeÃ«n die door PoincarÃ© waren geopperd verder
 uit tot de Minkowski-ruimte.
 
 In 1915 werd de speciale relativiteitstheorie door Einstein uitgebreid
@@ -731,9 +712,10 @@ verklaard door de kromming van de ruimte.
 \paragraph*{Opdracht:}
 
 \emph{In de hoofdstukken ``Invarianten'' en ``Einstein en Minkovsky''
-lopen we het risico dat er een kringredene\-ring}%
-\footnote{Een kringredenering ontstaat als we een aanname voor redenering 1
-gebruiken om redenering 2 te bewijzen en daarna een aanname voor redenering
-2 gebruiken om redenering 1 te bewijzen. %
-}\emph{ plaatsvindt. Welk risico is dit en is dit een probleem? }
+lopen we het risico dat er een kringredene\-ring} \footnote{Een
+kringredenering ontstaat als we een aanname voor redenering 1 gebruiken
+om redenering 2 te bewijzen en daarna een aanname voor redenering 2
+gebruiken om redenering 1 te bewijzen. }\emph{ plaatsvindt. Welk risico
+is dit en is dit een probleem? }
+
 \end{document}
