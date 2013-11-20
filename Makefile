@@ -7,7 +7,7 @@ ifeq ($(strip $(shell git status --porcelain | wc -l)), 0)
 	git clean -dxf
 	git checkout HEAD .nojekyll
 	git checkout master Dutch English scripts styles images
-	git checkout master routenet.html routenet_en.html
+	git checkout master index.html routenet.html routenet_en.html
 	mkdir nl
 	mkdir en
 	mv -fv Dutch/*/*.pdf nl/
