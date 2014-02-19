@@ -1,13 +1,13 @@
 How to contribute
 =================
 
-To submit new documents or make changes to existing ones you can
+To submit new documents for review or propose changes to existing ones you can
 create create a Pull Request or Issue on GitHub. If you do not have a
-GitHub account you can the send documents to beheer@hisparc.nl.
+GitHub account you can the send documents or changes to beheer@hisparc.nl.
 
 
-Format
-------
+File Format
+-----------
 
 For the initial submit a document in a format other than .tex (LaTeX)
 will be accepted, we will convert it to the proper format (.tex). After
