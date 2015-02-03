@@ -347,33 +347,49 @@ Deze methode werkt alleen als de massa van beide deeltje gelijk is. Als de massa
 In het linkerdiagram wordt de hyperbool met toestanden van het systeem met beide fotonen bepaald. Het parallellogram raakt de hyperbool volgens een waarnemer in het laboratorium. Het rechterdiagram wordt waargenomen  door een laboratoriumwaarnemer. In het rechterdiagram plaatsen een waarnemer in het centrum van de botsing. Volgens deze waarnemer schieten de deeltjes even snel in tegengestelde richtingen weg. Dit kan dus in alle tegengestelde richtingen.
 \caption{\label{fig:waarnemers}Twee waarnemers in het $\left(p,E\right)$-diagram}
 \end{figure}
-%\section{Hyperbolen}
-%
-%Hyperbolen zijn op diverse wijzen wiskundig te formuleren.
-%
-%\begin{equation}
-%\sinh\left(\varphi\right)=\frac{p}{m}
-%\end{equation}
-%
-%\begin{equation}
-%\cosh\left(\varphi\right)=\frac{E}{m}
-%\end{equation} 
-%
-%In deze vergelijking geldt $-\infty<\varphi<\infty$. Voor grote en kleine waarden van $varphi$ geldt $E\approx p$. De grootheid $varphi$ wardt ook wel rapidity genoemd.
-%
-%\begin{equation}
-%\tanh\left(\varphi\right)=\beta
-%\end{equation} 
-%
-%In figuur \ref{fig:waarnemers} kunnen we de rapidity van het systeem bepalen. $E=4m$ en $p=3m$.
-%
-%\begin{equation}
-%\tanh\left(\varphi\right)=\frac{\sinh\left(\varphi\right)}{\cosh\left(\varphi\right)}=\frac{p}{E}=\frac{3}{4}=0,75=\beta
-%\end{equation} 
-%
-%
-%\begin{equation}
-%\gamma=\frac{1}{\sqrt{1-\beta^{2}}}=0,76
-%\end{equation}
+
+\newpage{}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{ c c }
+\begin{tikzpicture}[domain=-4.2:4.2]
+  \draw [very thin,color=gray] (-0.1,-4.1) grid (4.7,4.1);
+  \draw [->] (-0.2,0) -- (4.9,0) node[right] {$E$};
+  \draw [->] (0,-4.4) -- (0,4.4) node[above] {$p$};
+  \draw    plot ({sqrt(\x*\x)},\x);
+  \draw    plot ({sqrt(1+\x*\x)},\x)             node[above] {$m=1$};
+  \draw    plot ({sqrt(4+\x*\x)},\x)             node[right] {$m=2$};
+\end{tikzpicture}
+&
+\begin{tikzpicture}[domain=-4.2:4.2]
+  \draw [very thin,color=gray] (-0.1,-4.1) grid (4.7,4.1);
+  \draw [->] (-0.2,0) -- (4.9,0) node[right] {$E$};
+  \draw [->] (0,-4.4) -- (0,4.4) node[above] {$p$};
+  \draw    plot ({sqrt(\x*\x)},\x);
+  \draw    plot ({sqrt(1+\x*\x)},\x)             node[above] {$m=1$};
+  \draw    plot ({sqrt(4+\x*\x)},\x)             node[right] {$m=2$};
+\end{tikzpicture}
+
+\tabularnewline
+
+\begin{tikzpicture}[domain=-4.2:4.2]
+  \draw [very thin,color=gray] (-0.1,-4.1) grid (4.7,4.1);
+  \draw [->] (-0.2,0) -- (4.9,0) node[right] {$E$};
+  \draw [->] (0,-4.4) -- (0,4.4) node[above] {$p$};
+  \draw    plot ({sqrt(\x*\x)},\x);
+  \draw    plot ({sqrt(1+\x*\x)},\x)             node[above] {$m=1$};
+  \draw    plot ({sqrt(4+\x*\x)},\x)             node[right] {$m=2$};
+\end{tikzpicture}
+&
+\begin{tikzpicture}[domain=-4.2:4.2]
+  \draw [very thin,color=gray] (-4.1,-4.1) grid (4.1,4.1);
+  \draw [->] (-4.4,0) -- (4.4,0) node[above] {$p_{\perp}$};
+  \draw [->] (0,-4.4) -- (0,4.4) node[above] {$p_{//}$};
+\end{tikzpicture}
+\end{tabular}
+\par\end{center}
+\end{figure}
+
 
 \end{document}
