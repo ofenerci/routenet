@@ -21,53 +21,45 @@ programma kunnen worden ingevoerd.
 \begin{figure}[h]
     \centering
     \includegraphics[width=14cm]{HiSPARC_Public_Database}
-    \caption{De data pagina van een station op http://data.hisparc.nl/}
+    \caption{\label{fig:datapagina}De data pagina van een station op http://data.hisparc.nl/}
 \end{figure}
 
 
-In figuur 1 is het bovenste deel van een data pagina van station 501 op
+In \figref{fig:datapagina} is het bovenste deel van een data pagina van station 501 op
 \url{http://data.hisparc.nl/} te zien. Hierin staat een histogram met het
 aantal coïncidenties in een uur tegen de tijd uitgezet. Deze informatie
 is ook als .csv (comma separated values) bestand op te halen door op
 ``source'' rechtsboven het histogram te klikken. In het bovenstaande
-scherm krijgen we dan het bestand in figuur 2.
+scherm krijgen we dan het bestand in \figref{fig:eventtime-source}.
 
 \begin{figure}[h]
 \centering
 \begin{verbatim}
-# "HiSPARC eventtime histogram source"
+# HiSPARC eventtime histogram source
+# Station: 501, data from 2015-9-23
 #
-# "Please note: the 'bin' is the left bin edge.  The width of the bin is 1"
-# "hour.  So bin 0 means between 0:00 and 1:00.  Value means the number of"
-# "events which were measured during 1 hour."
+# Please note: the 'bin' is the left bin edge. The width of the bin is 1
+# hour.  So bin 0 means between 0:00 and 1:00. Value means the number of
+# events which were measured during 1 hour.
+#
+# This data contains the following columns:
+# bin:   time [hour of day]
+# value: number of events [counts]
 #
 # bin	value
-0	2734
-1	2823
-2	2792
-3	2804
-4	2810
-5	2708
-6	2765
-7	2770
-8	2636
-9	2795
-10	2712
-11	2567
-12	2681
-13	2683
-14	2797
-15	2791
-16	2941
-17	3049
-18	2893
-19	2997
-20	2972
-21	2915
-22	2926
-23	2785
+0	2651
+1	2661
+2	2610
+3	2586
+4	2517
+…
+19	2540
+20	2377
+21	2516
+22	2433
+23	2392
 \end{verbatim}
-\caption{De inhoud van een .csv bestand van een HiSPARC eventtime histogram.}
+\caption{Verkorte inhoud van een .csv bestand van een HiSPARC eventtime histogram.}
 \label{fig:eventtime-source}
 \end{figure}
 
@@ -251,11 +243,11 @@ te geven:
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.75]{resultaat}
-    \caption{Het resultaat}
+    \caption{\label{fig:resultaat}Het resultaat}
 \end{figure}
 
 
-In figuur 4.4 is de richting waaruit de kosmische straling komt te
+In \figref{fig:resultaat} is de richting waaruit de kosmische straling komt te
 zien. De intensiteit van de extra kosmische straling moeten we nog
 vergelijken met de totale kosmische straling. Als we weten hoeveel
 coïncidenties er in het totaal in deze periode zijn geweest, is dit
