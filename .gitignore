@@ -8,6 +8,10 @@ Thumbs.db
 #*.eps
 #*.pdf
 
+# Compiled RouteNet documents
+Dutch/*/*.pdf
+English/*/*/*.pdf
+
 # LaTeX
 *.acn
 *.acr
@@ -17,6 +21,7 @@ Thumbs.db
 *.blg
 *.dvi
 *.fdb_latexmk
+*.fls
 *.fot
 *.glg
 *.glo
