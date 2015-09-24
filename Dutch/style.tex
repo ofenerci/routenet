@@ -5,7 +5,10 @@
 \usepackage[dutch]{babel}
 
 \usepackage{fouriernc}
-\usepackage[detect-all,load-configurations=binary,separate-uncertainty=true,per-mode=symbol]{siunitx}
+\usepackage[detect-all, binary-units, separate-uncertainty=true,
+            per-mode=symbol, retain-explicit-plus, retain-unity-mantissa=false,
+            range-phrase={ tot }, list-final-separator={ en },
+            output-decimal-marker={,}]{siunitx}
 
 \usepackage{setspace}
 \setstretch{1.2}
@@ -13,8 +16,9 @@
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
 
-\usepackage{geometry}
-\geometry{marginparwidth=0.5cm, verbose, a4paper, tmargin=3cm, bmargin=3cm, lmargin=2cm, rmargin=2cm}
+\usepackage[headheight=14pt]{geometry}
+\geometry{marginparwidth=0.5cm, verbose, a4paper, tmargin=3cm, bmargin=3cm,
+          lmargin=2cm, rmargin=2cm}
 
 \usepackage{float}
 
@@ -28,6 +32,8 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes}
 \usetikzlibrary{plotmarks}
+
+\usepackage{url}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -47,6 +53,8 @@
     \renewcommand{\footrulewidth}{0.1pt}
     \renewcommand{\headrulewidth}{0pt}
 }
+
+\newcommand{\figref}[1]{Figuur~\ref{#1}}
 
 \newcommand{\hisparc}{\textsmaller{HiSPARC}\xspace}
 \newcommand{\kascade}{\textsmaller{KASCADE}\xspace}
