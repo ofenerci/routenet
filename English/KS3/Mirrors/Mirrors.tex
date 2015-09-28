@@ -1,41 +1,8 @@
-\documentclass[12pt,a4paper]{article}
-\pagestyle{plain}
-\usepackage{fullpage}
-\usepackage[english]{babel}
-\usepackage{enumerate}
+\input{../../style}
 
-%equations
-\usepackage[fleqn]{amsmath}
-\numberwithin{equation}{section}
-
-%figures
-\usepackage[dvips]{graphicx}
-\graphicspath{{./images/}}
-\numberwithin{figure}{section}
-
-%excercises
-\newcounter{Exercise}
-\setcounter{Exercise}{1}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{framed}
-\definecolor{shadecolor}{gray}{0.9}
-\usepackage{caption}
-
-%tables
-\numberwithin{table}{section}
-
-%specials
-\usepackage{textcomp} %special (greek) characters as text
-\usepackage{pstricks} %more elaborate drawing package
-%\usepackage{ifthen} %
-%\usepackage{calc} %
-
-
-%document details
 \author{N.G. Schultheiss \\ translated and adapted by K. Schadenberg}
 \date{}
 \title{Mirrors}
-
 
 \begin{document}
 \maketitle
@@ -70,7 +37,8 @@ The reflection by a smooth shiny surface is governed by the \textbf{Law of Refle
 Figure~\ref{fig:lawofreflection} shows how a reflected ray of light can be constructed. The normal is always perpendicular to the surface. The angle of incidence is measured between the ray of light and the normal. Likewise, the angle of reflection is measured between the reflected ray of light and the normal. It is important to measure the angle with the normal, because in doing so we can apply the same method to convex and concave surfaces. 
 
 \begin{shaded}
-\textbf{Exercise \theExercise \stepcounter{Exercise}} : Measure the angle of incidence in figure~\ref{fig:lawofreflection}.\end{shaded}
+\textbf{Exercise \theExercise \stepcounter{Exercise}} : Measure the angle of incidence in figure~\ref{fig:lawofreflection}.
+\end{shaded}
 
 \section{Reflection at spherical mirrors}
 In a convex surface, such as the backside of a spoon, you see the world reduced in size. On the inside of the spoon however, you see the world enlarged. This surface is concave. Because a spoon is not a perfect sphere the image of the world is distorted. We will use the law of reflection to predict how light rays are reflected of a convex surface.
@@ -151,25 +119,27 @@ In the previous section we saw that a spherical mirror, convex or concave, does 
 
 We can use the Huygens principle (or Huygens Fresnel principle) to predict how light propagates as a wave. Huygens described light as a wave, not as a particle as his contemporary Newton did. His waves had two important properties: the wave beam and the wave front. The wave beam is similar to the light ray and indicates the direction the light travels in. The wave front is a peak (crest) or trough of the light wave. According to the Huygens principle the next wave front can be found by drawing circles on the wave front with a radius equal to the wave length. The next wave front can be sketched out by drawing the tangent (or tangent curve) to all the circles, see figure \ref{fig:huygens}.
 
-\begin{figure}\begin{center}
-\psset{unit=1mm}
-\begin{pspicture}*(100,70)
-\pscircle(0,35){50}
-\pscircle(0,35){60}
-\pscircle[linestyle=dotted](41.5,63){10}
-\pscircle[linestyle=dotted](46,54){10}
-\pscircle[linestyle=dotted](49,45){10}
-\pscircle[linestyle=dotted](50,35){10}
-\pscircle[linestyle=dotted](49,25){10}
-\pscircle[linestyle=dotted](46,16){10}
-\pscircle[linestyle=dotted](41.5,7){10}
-\put(60,60){Next wave front}
-\put(10,60){Wave front}
-\put(10,40){Auxiliary circles}
-\put(0,35){(Radius = wave length)}
-\end{pspicture}
-\caption{The Huygens principle.}\label{fig:huygens}
-\end{center}\end{figure}
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) circle[radius = 5.0];
+\draw (0,0) circle[radius = 6.0];
+
+%\pscircle[linestyle=dotted](41.5,63){10}
+%\pscircle[linestyle=dotted](46,54){10}
+%\pscircle[linestyle=dotted](49,45){10}
+%\pscircle[linestyle=dotted](50,35){10}
+%\pscircle[linestyle=dotted](49,25){10}
+%\pscircle[linestyle=dotted](46,16){10}
+%\pscircle[linestyle=dotted](41.5,7){10}
+%\put(60,60){Next wave front}
+%\put(10,60){Wave front}
+%\put(10,40){Auxiliary circles}
+%\put(0,35){(Radius = wave length)}
+\end{tikzpicture}
+\caption{The Huygens principle.} \label{fig:huygens}
+\end{center}
+\end{figure}
 
 \begin{shaded}
 \textbf{Exercise \theExercise \stepcounter{Exercise}} : Look at figure~\ref{fig:huygens}, explain that the previous wave front also touches the drawn circles.\end{shaded}
