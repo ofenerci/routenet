@@ -7,6 +7,7 @@ Thumbs.db
 # pdfLaTeX/Tikz/xfig output
 #*.eps
 #*.pdf
+*-eps-converted-to.pdf
 
 # Compiled RouteNet documents
 Dutch/*/*.pdf
@@ -43,6 +44,7 @@ English/*/*/*.pdf
 *.ps
 *.snm
 *.synctex.gz
+*.synctex.gz(busy)
 *.toc
 *.vrb
 *.xdy
