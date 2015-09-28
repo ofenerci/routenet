@@ -122,20 +122,14 @@ We can use the Huygens principle (or Huygens Fresnel principle) to predict how l
 \begin{figure}
 \begin{center}
 \begin{tikzpicture}
-\draw (0,0) circle[radius = 5.0];
-\draw (0,0) circle[radius = 6.0];
-
-%\pscircle[linestyle=dotted](41.5,63){10}
-%\pscircle[linestyle=dotted](46,54){10}
-%\pscircle[linestyle=dotted](49,45){10}
-%\pscircle[linestyle=dotted](50,35){10}
-%\pscircle[linestyle=dotted](49,25){10}
-%\pscircle[linestyle=dotted](46,16){10}
-%\pscircle[linestyle=dotted](41.5,7){10}
-%\put(60,60){Next wave front}
-%\put(10,60){Wave front}
-%\put(10,40){Auxiliary circles}
-%\put(0,35){(Radius = wave length)}
+\draw (0,0) arc [radius=8.0, start angle=0, end angle= 40] node[left] {First wavefront};
+\draw (1,0) arc [radius=9.0, start angle=0, end angle= 40] node[above right] {Next wavefront};
+\foreach \i in {1,...,5}
+{
+  \draw ({(7.9*cos(5*\i+5)-8)},{7.9*sin(5*\i+5)})--({(8.1*cos(5*\i+5)-8)},{8.1*sin(5*\i+5)});
+  \draw[dashed] ({8*(cos(5*\i+5)-1)},{8*sin(5*\i+5)}) circle[radius=1];
+}
+\node at (-4,1) {Circle with radius = wavelength };
 \end{tikzpicture}
 \caption{The Huygens principle.} \label{fig:huygens}
 \end{center}
