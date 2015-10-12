@@ -37,7 +37,7 @@ On the left hand side of the page the actual data is shown. There are three grap
 The data that is used to generate these graphs can be directly downloaded from this site. In the top right corner of every graph there is a link to the source data `Source'. The data is saved in a comma separated value file (.csv). The contents of the file should look something like figure \ref{fig:data_CSV}.\footnote{Windows systems do not always correctly recognise the file settings of the .csv file. If this is the case you should use the second import method for Excel described in this module.} The top of the file gives a short description of the file contents. In the example of figure \ref{fig:data_CSV} the data of 17th of June 2012 by station 13001 is used. It registered 792 coincidences between 2 a.m. and 3 a.m.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{Screenshot_CSV_data_HiSPARC_Station_13001.eps}
+\includegraphics[scale=0.5]{Screenshot_CSV_data_HiSPARC_Station_13001}
 \caption{Part of the .csv file.}\label{fig:data_CSV}
 \end{center}\end{figure} 
 
@@ -91,7 +91,7 @@ Time represents a certain angle with respect to the stars. We can switch between
 $t$ is the time we want to convert into an angle and $T$ is the duration of an entire revolution. Try to figure out for yourself what time we need to use in this equation, solar or sidereal.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{measuring_angle.eps}
+\includegraphics[scale=0.5]{measuring_angle}
 \caption{The sky is divided into quadrants and the data is assigned to a quadrant according to the measurement angle $\alpha$.}\label{fig:measuring_angle}
 \end{center}\end{figure}
 
@@ -114,7 +114,7 @@ The weighting function should be a pure Gauss-curve. However this curve is infin
 \begin{equation} \mbox{weighting factor} = \frac{1}{2} \left( 1 - \cos\left( 2 \pi \frac{t}{T_m}\right) \right) \end{equation}
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{raised_cosine.eps}
+\includegraphics[scale=0.5]{raised_cosine}
 \caption{The weighting curve used on the data, a raised cosine.}\label{fig:raised_cosine}
 \end{center}\end{figure} 
 
@@ -133,7 +133,7 @@ Does this nice line mean their is actually something interesting producing cosmi
 \begin{equation} \mbox{deviation} = \frac{\sqrt{\sum Data_x^2 + \sum Data_y ^2}}{\sum Data} \cdot 100\% \end{equation}
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{direction.eps}
+\includegraphics[scale=0.5]{direction}
 \caption{The result of the data analysis, the direction of excess radiation is represented as a line.}\label{fig:direction}
 \end{center}\end{figure} 
 

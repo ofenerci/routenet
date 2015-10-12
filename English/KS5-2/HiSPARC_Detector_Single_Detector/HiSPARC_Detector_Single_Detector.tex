@@ -19,14 +19,14 @@ The HiSPARC detector consists of three parts: a scintillator plate, a light guid
 The scintillator plate is made from a plastic mixed with an organic compound which creates light (photons) when a charged particle passes through the plate.\footnote{In de module `Fluorescence' and `de Broglie' you can read more about this scintillating effect.} The intensity of this flash of light is proportional to the amount of energy deposited inside the plate.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.38]{detector.eps}%
+\includegraphics[scale=0.38]{detector}%
 \caption{A single HISPARC detector consists of a scintillator plate roughly 1 metre long and half a metre wide connected to a light guide. This light guide `guides' the light created inside the plate to the much smaller photomultiplier tube (PMT). The PMT operates at a high voltages supplied by power supply. The current created by the PMT is measured by a oscilloscope.}\label{fig:detector}
 \end{center}\end{figure}
 
 Some of the created photons will travel via the light guide to the PMT. Here the light is converted into a stream of electrons; a measurable electrical current. This electrical pulse as measured by the oscilloscope is shown in figure~\ref{fig:scope}.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.45]{scope.eps}%
+\includegraphics[scale=0.45]{scope}%
 \caption{Example of the voltage pulse created by the PMT after the passage of a muon, as seen by the oscilloscope. This figure shows two peaks of roughly the same size, created by two detectors connected to the same detector station.\protect\footnotemark ~The scaling in this graph has been changed to make the peaks more clearly visible. In reality every division (space between two vertical lines) is only 3~ns, a hundred times smaller than displayed.}\label{fig:scope}
 \end{center}\end{figure}
 \footnotetext{See `HiSPARC Detector - Detector Station' for more details.}
@@ -58,7 +58,7 @@ Because $k$ only varies slightly with different materials the graph in figure~\r
 Figure~\ref{fig:energy_loss} also shows that the energy loss is proportional to the energy $E$. Low and very high energetic muons lose more energy than intermediate muons. The muons created in air showers, the ones we are interested in, have energies in the order of GeVs ($10^9$~eV).
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{energy_loss.eps}%
+\includegraphics[scale=0.5]{energy_loss}%
 \caption{The energy loss $\Delta E$ of muons during interactions with other matter as a function of the muon-energy $E$.}\label{fig:energy_loss}
 \end{center}\end{figure}
 
@@ -75,7 +75,7 @@ To calculate the number of photons created by the scintillator plate we used the
 The Landau-distribution for muons is shown in figure~\ref{fig:energy_landau}. This graph shows the number of muons $N$ which deposit a certain amount of energy $\Delta E$. The distribution shows one clear peak value, the most probable (or most frequent) energy loss. This is the value used to create figure~\ref{fig:energy_loss}.
 
 \begin{figure}[b]\begin{center}
-\includegraphics[scale=0.4]{energy_landau.eps}%
+\includegraphics[scale=0.4]{energy_landau}%
 \caption{Landau distribution of the energy loss $\Delta E$ of a large number of muons.}\label{fig:energy_landau}
 \end{center}\end{figure}
 
@@ -99,7 +99,7 @@ The main cause of the loss of light is the refraction and reflection of light on
 \end{shaded}
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{refraction.eps}%
+\includegraphics[scale=0.5]{refraction}%
 \caption{Cross section of the scintillator in side view. In this greatly simplified situation a passing muon creates a flash of light in a single point.}\label{fig:refraction}
 \end{center}\end{figure}
 
@@ -117,7 +117,7 @@ Only 1\% of the created photons, $N_p=4 \cdot 10^4$, reaches the PMT, $N_{p,C}=4
 \end{shaded}
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.38]{PMT_cross_section.eps}%
+\includegraphics[scale=0.38]{PMT_cross_section}%
 \caption{Cross section of a Photo Multiplier Tube (PMT).}\label{fig:PMT_cross_section}
 \end{center}\end{figure}
 
@@ -134,7 +134,7 @@ Use the values above to calculate the number of electrons at the PMT-anode, $N_{
 If you have done your sums right you now know that the passage of a single muon causes the `delivery' of $3.4 \cdot 10^9$ electrons at the PMT-anode. Figure~\ref{fig:PMT_connection} shows how the PMT is connected to the oscilloscope, the electrons can flow to the ground via a $50~\Omega$ resistor. This setup allows us to measure the stream of electrons as a voltage pulse.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.38]{PMT_connection.eps}%
+\includegraphics[scale=0.38]{PMT_connection}%
 \caption{The PMT-signal is carried to the oscilloscope via a resistor. }\label{fig:PMT_connection}
 \end{center}\end{figure}
 

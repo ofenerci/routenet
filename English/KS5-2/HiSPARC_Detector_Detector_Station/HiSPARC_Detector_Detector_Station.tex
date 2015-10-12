@@ -31,7 +31,7 @@ The scintillator plates in the detectors are constantly struck by muons. Most of
 An electronic circuit, drawn in figure~\ref{fig:station_schematic}, is used to detect the coincidences. It consists of two comparators and an AND-gate. If a plate detects the passing of a particle the voltage coming from the PMT will pass the threshold set to the comparator. Only if both signals coming from the plates surpass the threshold will the AND-gate trigger the storing of the data coming from the PMTs together with the GPS time stamp. What is stored is a possible air shower. 
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.65]{station_schematic.eps}%
+\includegraphics[scale=0.65]{station_schematic}%
 \caption{Schematic representation of a two plate HiSPARC detector station and processing electronics. }\label{fig:station_schematic}
 \end{center}\end{figure}
 
@@ -46,7 +46,7 @@ This is were the importance of the GPS antenna comes into play. HiSPARC uses GPS
 Data collected by the computer is sent via an internet to a central storage server at NIKHEF in Amsterdam. Here the data from all individual detector stations is combined to allow for data processing. It is also made available via the HiSPARC website. We can for instance look for coincidence signals from different detector stations within a time window of 1~$\mu$s. An example of such an event is shown in figure~\ref{fig:multiple_coin}.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.65]{multiple_coin.eps}
+\includegraphics[scale=0.65]{multiple_coin}
 \caption{Signals from a multiple coincidence at two detector stations in the Nijmegen cluster. The signals from the oscilloscope are colour red and blue for the different detector plates in both station. The diagram shows the pulse height in mV as a function of the time. Clearly this is an event asking for further investigation. A `normal' event would show a single clear peak in all detector plates.\protect\footnotemark}\label{fig:multiple_coin}
 \end{center}\end{figure}
 
