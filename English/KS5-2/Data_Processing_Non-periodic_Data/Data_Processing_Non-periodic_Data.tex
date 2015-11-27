@@ -61,7 +61,7 @@ P(\mbox{Thunderstorms})+P(\mbox{No thunderstorms}) = 1
 \end{equation}
 \end{shaded}
 
-Lets assume cosmic radiation is not influenced by the weather. We therefore create fictitious measurement data, as shown in figure~\ref{fig:constant}, of the day we observed the thunderstorms  with no variation during the day.\footnote{We have also `corrected' our fictitious data for any known and unknown variations other than thunderstorms.} 
+Lets assume cosmic radiation is not influenced by the weather. We therefore create fictitious measurement data, as shown in figure~\ref{fig:constant}, of the day we observed the thunderstorms  with no variation during the day.\footnote{We have also `corrected' our fictitious data for any known and unknown variations other than thunderstorms.}
 
 \begin{figure}\begin{center}
 \begin{picture}(0,0)%
@@ -113,7 +113,7 @@ What problems arise when we try to investigate the dependence of cosmic radiatio
 \caption{Weather data from station 501 on the 1st of July 2012.}\label{fig:501_weather}
 \end{center}\end{figure}
 
-Figure~\ref{fig:501_weather} shows the weather data from station 501, like the other graphs on the data page these graph have a link to the source to download the data. The results are written in a .csv file but in a slightly different way than the detector data. The temperature and ambient pressure are measured every second. These seconds are not counted for every day, but since the 1st of January 1970. This is known as POSIX time.\footnote{Explaining all the details about POSIX or Unix time and why it does not include leap seconds for instance goes beyond the scope of this text. On the internet multiple methods can be found to convert POSIX time into something we can all understand.} Our coincidence is per hour, so we need to convert the weather data to match this.\footnote{This is called 'rebinning', all the data was placed into bins (sort of like buckets) 1 second wide, now we want to place them into bins 3600 seconds wide.}
+Figure~\ref{fig:501_weather} shows the weather data from station 501, like the other graphs on the data page these graph have a link to the source to download the data. The results are written in a .tsv file but in a slightly different way than the detector data. The temperature and ambient pressure are measured every second. These seconds are not counted for every day, but since the 1st of January 1970. This is known as POSIX time.\footnote{Explaining all the details about POSIX or Unix time and why it does not include leap seconds for instance goes beyond the scope of this text. On the internet multiple methods can be found to convert POSIX time into something we can all understand.} Our coincidence is per hour, so we need to convert the weather data to match this.\footnote{This is called 'rebinning', all the data was placed into bins (sort of like buckets) 1 second wide, now we want to place them into bins 3600 seconds wide.}
 
 \section{Correlation between Two Graphs}
 Looking for correlations between two graphs can be done using the steps described in the previous section. But there is a faster and smarter way of doing this. In the following example we will look at the possible connection between cosmic radiation and ambient pressure.
@@ -124,7 +124,7 @@ Looking for correlations between two graphs can be done using the steps describe
 \item Determine the average pressure for the entire time interval.
 \item Calculate the difference between the instantaneous pressure and the average pressure for each measurement point, place these values in a separate column.
 \item Multiply the deviation from the average with the number of coincidences for each time interval. Place the result in a separate column.
-\item Calculate the sum of this final column. Is the result a positive number, then an increase in pressure is associated with an increase in cosmic radiation. Is the result negative, then the reverse is true. 
+\item Calculate the sum of this final column. Is the result a positive number, then an increase in pressure is associated with an increase in cosmic radiation. Is the result negative, then the reverse is true.
 \end{enumerate}
 
 \begin{shaded}

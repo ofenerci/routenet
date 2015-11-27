@@ -34,18 +34,18 @@ On the left hand side of the page the actual data is shown. There are three grap
 \item[Pulse integral histogram] shows the integral of the registered coincidences.
 \end{description}
 
-The data that is used to generate these graphs can be directly downloaded from this site. In the top right corner of every graph there is a link to the source data `Source'. The data is saved in a comma separated value file (.csv). The contents of the file should look something like figure \ref{fig:data_CSV}.\footnote{Windows systems do not always correctly recognise the file settings of the .csv file. If this is the case you should use the second import method for Excel described in this module.} The top of the file gives a short description of the file contents. In the example of figure \ref{fig:data_CSV} the data of 17th of June 2012 by station 13001 is used. It registered 792 coincidences between 2 a.m. and 3 a.m.
+The data that is used to generate these graphs can be directly downloaded from this site. In the top right corner of every graph there is a link to the source data `Source'. The data is saved in a tab-separated values (.tsv) file. The contents of the file should look something like figure \ref{fig:data_TSV}.\footnote{Windows systems do not always correctly recognise the file settings of the .tsv file. If this is the case you should use the second import method for Excel described in this module.} The top of the file gives a short description of the file contents. In the example of figure \ref{fig:data_TSV} the data of 17th of June 2012 by station 13001 is used. It registered 792 coincidences between 2 a.m. and 3 a.m.
 
 \begin{figure}\begin{center}
-\includegraphics[scale=0.5]{Screenshot_CSV_data_HiSPARC_Station_13001}
-\caption{Part of the .csv file.}\label{fig:data_CSV}
-\end{center}\end{figure} 
+\includegraphics[scale=0.5]{Screenshot_TSV_data_HiSPARC_Station_13001}
+\caption{Part of the .tsv file.}\label{fig:data_TSV}
+\end{center}\end{figure}
 
 \section{Importing the data}
 The process of importing data is described for two different spreadsheet applications: Microsoft Excel and LibreOffice Calc\footnote{There are a few differences between LibreOffice and OpenOffice are, but this manual should be applicable to both.}.
 
 \subsection{Microsoft Excel}
-If the .csv file is correctly recognised by Windows then the .csv file can be directly opened by Excel and the the bin number and measurement value will have been placed in separate columns. If this is not the case then the .csv data needs to be manually imported into Excel. To do this follow these steps:
+If the .tsv file is correctly recognised by Windows then the .tsv file can be directly opened by Excel and the the bin number and measurement value will have been placed in separate columns. If this is not the case then the .tsv data needs to be manually imported into Excel. To do this follow these steps:
 \begin{enumerate}[1.]
 \item Start Excel.
 \item Select `Data' in the Ribbon (top menu bar).
@@ -56,7 +56,7 @@ If the .csv file is correctly recognised by Windows then the .csv file can be di
 \end{enumerate}
 
 \subsection{LibreOffice Calc}
-When trying to open the .csv file with Calc the Text Import Wizard should automatically start. Make sure to select `Tab' under `Seperated by' and deselect `Space' (this should be the default setting). Under `Other options' the first option `Quoted field as text' should be selected. Click `OK' an you are done.
+When trying to open the .tsv file with Calc the Text Import Wizard should automatically start. Make sure to select `Tab' under `Seperated by' and deselect `Space' (this should be the default setting). Under `Other options' the first option `Quoted field as text' should be selected. Click `OK' an you are done.
 
 \section{Simple data processing}
 Now that we have our data we can look patterns and relationships. We could for instance examine if there are more coincidences during the day time, or if the moon influences our measurements. Let's start simple with the determination of the average number of coincidences during one week.
@@ -75,9 +75,9 @@ Now that we have our data we can look patterns and relationships. We could for i
 \section{More advanced data processing}
 In the previous section we did some easy data analysis, lets take it a step further. Let's see if we can locate possible sources of cosmic radiation.
 
-In theory the HiSPARC detectors could detect particles coming from any direction. However, because of the geometry of the detectors they are most sensitive to particles coming strait from above. Luckily this is also where most of the showers come from (see module `Airshowers'). Lets assume that all particles we measure at 12 o'clock come from directly above our detector, that would be the direction of the Sun. An hour later our detector has turned away from the Sun and is now looking at a slightly different part of the Sky. 
+In theory the HiSPARC detectors could detect particles coming from any direction. However, because of the geometry of the detectors they are most sensitive to particles coming strait from above. Luckily this is also where most of the showers come from (see module `Airshowers'). Lets assume that all particles we measure at 12 o'clock come from directly above our detector, that would be the direction of the Sun. An hour later our detector has turned away from the Sun and is now looking at a slightly different part of the Sky.
 
-The Earth rotates both around its own axis and around the Sun. That means that, although at 12 o'clock we will always look at the Sun, the stars will have a slightly different position each day. To take this into account in our calculations we need to use a different time system; celestial or sidereal time (see the module `The Sky' for a bit of background information). 
+The Earth rotates both around its own axis and around the Sun. That means that, although at 12 o'clock we will always look at the Sun, the stars will have a slightly different position each day. To take this into account in our calculations we need to use a different time system; celestial or sidereal time (see the module `The Sky' for a bit of background information).
 
 Every day the Earth completes one revolution around its axis of rotation and every year it makes one revolution around the Sun. If we take the stars as reference point however it seems as though the Earth makes one extra revolution around its axis every year. That is why the \textit{rotation period} as used by astronomers differs from the solar day, it includes that part of the rotation that is needed to accommodate the portion of the \textit{orbital period} during one day.
 
@@ -108,7 +108,7 @@ This analysis involves a lot of calculations, luckily the spreadsheet programs c
 \begin{shaded}
 \textbf{Exercise \theExercise \stepcounter{Exercise}} : How many solar hours data are needed to obtain a whole number of rotation periods?\end{shaded}
 
-As the last question showed we need a lot of data to make the calculations work. Not only does this involve importing large amount of data (a lot of work) but our detector has to be up and running without problems for the same period of time. To make life a bit easier we will use a shorter period of time. To negate the problems in our analysis caused by the incomplete number of periods used we will assign weighting factors to the data. Data at the start and end of our data set will count less towards the final answer while the middle part will be treated normally. 
+As the last question showed we need a lot of data to make the calculations work. Not only does this involve importing large amount of data (a lot of work) but our detector has to be up and running without problems for the same period of time. To make life a bit easier we will use a shorter period of time. To negate the problems in our analysis caused by the incomplete number of periods used we will assign weighting factors to the data. Data at the start and end of our data set will count less towards the final answer while the middle part will be treated normally.
 
 The weighting function should be a pure Gauss-curve. However this curve is infinitely long and we already had the problem of insufficient data. Therefore we will use an approximation which can be easily calculated using a spreadsheet program, a raised cosine:
 \begin{equation} \mbox{weighting factor} = \frac{1}{2} \left( 1 - \cos\left( 2 \pi \frac{t}{T_m}\right) \right) \end{equation}
@@ -116,7 +116,7 @@ The weighting function should be a pure Gauss-curve. However this curve is infin
 \begin{figure}\begin{center}
 \includegraphics[scale=0.5]{raised_cosine}
 \caption{The weighting curve used on the data, a raised cosine.}\label{fig:raised_cosine}
-\end{center}\end{figure} 
+\end{center}\end{figure}
 
 The entire procedure now becomes:
 \begin{enumerate}[1.]
@@ -127,7 +127,7 @@ The entire procedure now becomes:
 \item Calculate $Data_x$ and $Data_y$.
 \item Determine the sum of $Data_x$ and the sum of $Data_y$.
 \end{enumerate}
-Are the sums 0? Then there is no direction from where more radiation is detected. Is the sum not 0, then we can take our analysis further. We can use our sums to reconstruct the angle from which the excess of radiation was detected. Lets say we obtained to following sums $\sum Data_x = -525$  and $\sum Data_y = -260$. We can represent this as a line in a coordinate system such as figure \ref{fig:direction}. 
+Are the sums 0? Then there is no direction from where more radiation is detected. Is the sum not 0, then we can take our analysis further. We can use our sums to reconstruct the angle from which the excess of radiation was detected. Lets say we obtained to following sums $\sum Data_x = -525$  and $\sum Data_y = -260$. We can represent this as a line in a coordinate system such as figure \ref{fig:direction}.
 
 Does this nice line mean their is actually something interesting producing cosmic radiation in the direction of the line? We cannot be sure because charged particles are deflected by magnetic fields. But before we start looking up at the sky, let us first look at the amount of excess radiation. To do this we will compare the amount of radiation coming from the found direction with the total amount of radiation using:
 \begin{equation} \mbox{deviation} = \frac{\sqrt{\sum Data_x^2 + \sum Data_y ^2}}{\sum Data} \cdot 100\% \end{equation}
@@ -135,11 +135,9 @@ Does this nice line mean their is actually something interesting producing cosmi
 \begin{figure}\begin{center}
 \includegraphics[scale=0.5]{direction}
 \caption{The result of the data analysis, the direction of excess radiation is represented as a line.}\label{fig:direction}
-\end{center}\end{figure} 
+\end{center}\end{figure}
 
 \begin{shaded}
 \textbf{Exercise \theExercise \stepcounter{Exercise}} : Use the analysis described above to analyse one week worth of data from your own detector station.\end{shaded}
 
-
 \end{document}
-
