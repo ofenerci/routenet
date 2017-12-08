@@ -10,10 +10,8 @@ table {
 
 td {
     padding: 4px;
-    vertical-align:middle;
-    text-align:center;}
-
-table td {
+    vertical-align: middle;
+    text-align: center;
     border-width: 1px;
     border-style: solid;
     border-color: #cdcddA;
@@ -23,19 +21,18 @@ td a {display: block;}
 
 td.empty {
     background: #fff;
-    border-width:0px;}
+    border-width: 0px;}
 
-.vervolg0 {background-color: #88b;}
-.vervolg1 {background-color: #99c;}
-.vervolg2 {background-color: #aad;}
-.vervolg3 {background-color: #bbe;}
 .vervolg4 {background-color: #ddf;}
+.vervolg3 {background-color: #bbe;}
+.vervolg2 {background-color: #aad;}
+.vervolg1 {background-color: #99c;}
+.vervolg0 {background-color: #88b;}
 
 a:link {text-decoration: none; color: black;}
 a:visited {text-decoration: none; color: #303030;}
 a:active {text-decoration: none; color: black;}
-a:hover {text-decoration: none; color: blue;}
-
+a:hover {text-decoration: none; color: white;}
 
 #footer {
     margin: 10px auto;
