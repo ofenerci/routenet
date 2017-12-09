@@ -15,9 +15,11 @@ clean: clean-recursive
 
 latexmk-recursive:
 	@for dir in $(NL_TEX_DIRECTORIES) $(EN_TEX_DIRECTORIES); do \
+		echo '******** starting latexmk ********'; \
 		cd $$dir; \
 		echo Compiling TeX in $$dir; \
 		latexmk -shell-escape -quiet -g -pdf *.tex; \
+		echo '******** finished latexmk ********'; \
 		cd '$(ROOT_DIR)'; \
 	done
 
