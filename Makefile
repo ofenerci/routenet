@@ -18,7 +18,7 @@ latexmk-recursive:
 		echo '******** starting latexmk ********'; \
 		cd $$dir; \
 		echo Compiling TeX in $$dir; \
-		latexmk -shell-escape -quiet -g -pdf *.tex; \
+		latexmk -shell-escape -quiet -g -pdf *.tex || exit 1; \
 		echo '******** finished latexmk ********'; \
 		cd '$(ROOT_DIR)'; \
 	done
