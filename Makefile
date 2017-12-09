@@ -17,7 +17,7 @@ latexmk-recursive:
 	@for dir in $(NL_TEX_DIRECTORIES) $(EN_TEX_DIRECTORIES); do \
 		cd $$dir; \
 		echo Compiling TeX in $$dir; \
-		latexmk -shell-escape -quiet -g -pdf *.tex; \
+		latexmk -shell-escape -quiet -g -pdf *.tex || exit 1; \
 		cd '$(ROOT_DIR)'; \
 	done
 
