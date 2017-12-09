@@ -1,3 +1,6 @@
+# Build dir
+_build
+
 # OS generated files
 .DS_Store*
 ehthumbs.db
